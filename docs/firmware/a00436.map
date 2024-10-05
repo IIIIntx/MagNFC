@@ -1,0 +1,4 @@
+<map id="Core Debug Registers (CoreDebug)" name="Core Debug Registers (CoreDebug)">
+<area shape="rect" id="node1" title="Cortex&#45;M0+ Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not..." alt="" coords="240,5,389,45"/>
+<area shape="rect" id="node2" href="$a00431.html" title="Type definitions and defines for Cortex&#45;M processor based devices." alt="" coords="5,13,192,38"/>
+</map>

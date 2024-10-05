@@ -1,0 +1,5 @@
+../src/validate.c:45:6:Validate_Init	0	static
+../src/validate.c:54:6:Validate_DeInit	0	static
+../src/validate.c:61:6:Validate_Reset	0	static
+../src/validate.c:73:6:Validate_Temperature	32	static
+../src/validate.c:124:6:Validate_NewEvents	0	static

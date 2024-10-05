@@ -1,0 +1,12 @@
+../src/timer.c:29:6:RTC_IRQHandler	16	static
+../src/timer.c:66:6:Timer_Init	8	static
+../src/timer.c:78:6:Timer_StartMeasurementTimeout	16	static
+../src/timer.c:95:6:Timer_StopMeasurementTimeout	8	static
+../src/timer.c:103:6:Timer_CheckMeasurementTimeout	0	static
+../src/timer.c:139:6:Timer_StopHostTimeout	8	static
+../src/timer.c:55:6:CT16B0_IRQHandler	8	static
+../src/timer.c:110:6:Timer_StartHostTimeout	8	static
+../src/timer.c:148:6:Timer_CheckHostTimeout	0	static
+../src/timer.c:155:6:Timer_StartFreeRunning	16	static
+../src/timer.c:163:6:Timer_StopFreeRunning	0	static
+../src/timer.c:168:10:Timer_GetFreeRunning	0	static

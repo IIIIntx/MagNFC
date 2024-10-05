@@ -1,0 +1,10 @@
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:153:13:GetFirstOrLastByTag	56	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:191:6:Event_Init	8	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:210:6:Event_DeInit	24	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:222:13:Event_SetCb	0	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:235:6:Event_Set	48	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:263:14:Event_GetByIndex	56	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:296:14:Event_GetByTime	56	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:326:14:Event_GetByTag	56	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:355:6:Event_GetFirstByTag	16	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/event/event.c:360:6:Event_GetLastByTag	16	static

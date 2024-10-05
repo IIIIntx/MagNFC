@@ -1,0 +1,15 @@
+../src/maintlogger.c:443:13:GenerateNextAutomaticCommand	40	dynamic
+../src/maintlogger.c:540:13:DoPeriodicMeasurements	32	static
+../src/maintlogger.c:628:13:Execute	40	static
+../src/maintlogger.c:347:13:DeInitApp	8	static
+../src/maintlogger.c:369:13:DeInit	32	static
+../src/maintlogger.c:323:13:InitApp	8	static
+../src/maintlogger.c:311:13:Init	8	static
+../src/maintlogger.c:217:6:PIO0_0_IRQHandler	8	static
+../src/maintlogger.c:236:6:App_FieldStatusCb	8	static
+../src/maintlogger.c:260:6:App_MsgAvailableCb	8	static
+../src/maintlogger.c:271:6:App_MsgReadCb	8	static
+../src/maintlogger.c:284:5:App_CompressCb	1040	static
+../src/maintlogger.c:299:5:App_DecompressCb	16	static
+../src/maintlogger.c:706:5:main	16	static
+../src/maintlogger.c:178:6:ResetISR	8	static

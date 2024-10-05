@@ -1,0 +1,6 @@
+../src/text.c:88:13:Number2String	16	static
+../src/text.c:104:13:DeciValue2String	24	static
+../src/text.c:128:13:Duration2String	32	static
+../src/text.c:167:14:Text_GetStatus	40	static
+../src/text.c:204:14:Text_GetFailures	40	static
+../src/text.c:244:14:Text_GetTemperature	16	static

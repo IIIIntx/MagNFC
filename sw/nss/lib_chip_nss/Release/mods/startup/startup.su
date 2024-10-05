@@ -1,0 +1,3 @@
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:60:13:defaultIntHandler	0	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:99:6:Startup_VarInit	20	static
+D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:68:13:defaultResetISR	8	static

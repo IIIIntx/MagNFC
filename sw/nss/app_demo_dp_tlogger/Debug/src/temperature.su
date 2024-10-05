@@ -1,0 +1,5 @@
+../src/temperature.c:72:13:SendMeasureTemperatureResponse	16	static
+../src/temperature.c:37:6:App_TmeasCb	8	static
+../src/temperature.c:82:6:Temperature_Reset	0	static
+../src/temperature.c:87:5:Temperature_Measure	8	static
+../src/temperature.c:92:5:Temperature_Get	8	static

@@ -1,0 +1,12 @@
+../src/memory.c:127:6:App_EventCb	0	static
+../src/memory.c:178:6:Memory_DeInit	40	static
+../src/memory.c:192:25:Memory_GetConfig	0	static
+../src/memory.c:197:6:Memory_IsReadyToStart	0	static
+../src/memory.c:207:6:Memory_IsMonitoring	0	static
+../src/memory.c:217:6:Memory_IsFull	0	static
+../src/memory.c:222:6:Memory_BodOccurred	0	static
+../src/memory.c:244:6:Memory_SetAttainedValue	0	static
+../src/memory.c:254:6:Memory_AddToState	24	static
+../src/memory.c:227:6:Memory_ResetConfig	8	static
+../src/memory.c:143:6:Memory_Init	24	static
+../src/memory.c:287:6:Memory_RemoveFromState	0	static

@@ -1,0 +1,5 @@
+<directory>
+ <chips chipVendor='NXP' >
+  <chip name='Generic-M0plus' xml_file='Generic-M0plus_part.xml' />
+ </chips>
+</directory> 

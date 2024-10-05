@@ -1,0 +1,9 @@
+../mods/uarttx/uarttx.c:79:21:SkipFormattingOptions	0	static
+../mods/uarttx/uarttx.c:95:6:UartTx_Init	24	static
+../mods/uarttx/uarttx.c:118:6:UartTx_DeInit	8	static
+../mods/uarttx/uarttx.c:124:6:UartTx_Tx	40	static
+../mods/uarttx/uarttx.c:150:6:UartTx_PrintString	8	static
+../mods/uarttx/uarttx.c:87:13:PrintUnknown	8	static
+../mods/uarttx/uarttx.c:161:6:UartTx_PrintDec	32	static
+../mods/uarttx/uarttx.c:185:6:UartTx_PrintHex	24	static
+../mods/uarttx/uarttx.c:205:6:UartTx_Printf	16	static

@@ -1,0 +1,4 @@
+<map id="Nested Vectored Interrupt Controller (NVIC)" name="Nested Vectored Interrupt Controller (NVIC)">
+<area shape="rect" id="node1" title="Type definitions for the NVIC Registers." alt="" coords="240,5,411,45"/>
+<area shape="rect" id="node2" href="$a00431.html" title="Type definitions and defines for Cortex&#45;M processor based devices." alt="" coords="5,13,192,38"/>
+</map>

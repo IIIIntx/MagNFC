@@ -1,0 +1,10 @@
+<map id="Defines and Type Definitions" name="Defines and Type Definitions">
+<area shape="rect" id="node1" href="$a00428.html" title=" " alt="" coords="5,165,184,205"/>
+<area shape="rect" id="node8" title="Type definitions and defines for Cortex&#45;M processor based devices." alt="" coords="232,173,419,198"/>
+<area shape="rect" id="node2" href="$a00432.html" title="Core Register type definitions." alt="" coords="487,5,617,45"/>
+<area shape="rect" id="node3" href="$a00436.html" title="Cortex&#45;M0+ Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not..." alt="" coords="477,69,627,109"/>
+<area shape="rect" id="node4" href="$a00433.html" title="Type definitions for the NVIC Registers." alt="" coords="467,133,637,173"/>
+<area shape="rect" id="node5" href="$a00434.html" title="Type definitions for the System Control Block Registers." alt="" coords="477,197,627,237"/>
+<area shape="rect" id="node6" href="$a00435.html" title="Type definitions for the System Timer Registers." alt="" coords="485,261,619,301"/>
+<area shape="rect" id="node7" href="$a00437.html" title="Definitions for base addresses, unions, and structures." alt="" coords="495,326,609,351"/>
+</map>

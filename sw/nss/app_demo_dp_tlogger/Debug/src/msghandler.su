@@ -1,0 +1,14 @@
+../src/msghandler.c:222:12:ExtractFullPeriodicData	16	static
+../src/msghandler.c:432:17:GetPeriodicDataHandler	16	static
+../src/msghandler.c:403:17:GetEventsHandler	24	static
+../src/msghandler.c:127:13:EventCb_GetEventsResponse	32	static
+../src/msghandler.c:386:17:StartHandler	16	static
+../src/msghandler.c:365:17:MeasureTemperatureHandler	16	static
+../src/msghandler.c:310:17:SetConfigHandler	24	static
+../src/msghandler.c:286:17:GetConfigHandler	72	static
+../src/msghandler.c:264:17:GetMeasurementsHandler	16	static
+../src/msghandler.c:485:13:ResponseCb	40	static
+../src/msghandler.c:465:6:CommandAcceptCb	8	static
+../src/msghandler.c:595:6:AppMsgInit	16	static
+../src/msghandler.c:610:6:AppMsgHandleCommand	8	static
+../src/msghandler.c:616:6:AppMsgHandlerSendMeasureTemperatureResponse	16	static
