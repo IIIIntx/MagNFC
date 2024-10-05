@@ -1,4 +1,4 @@
-src/mainndeft2t.o src/mainndeft2t.d: ../src/mainndeft2t.c \
+src/mainndeft2t.o: ../src/mainndeft2t.c \
  D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\mods\chip_sel.h \
  D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\mods\board_sel.h \
  D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\app_example_dp_ndeft2t\mods\app_sel.h \

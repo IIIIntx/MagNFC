@@ -179,69 +179,94 @@ int main(void)
 {
     Board_Init();
     NDEFT2T_Init();
+
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
     Chip_ADCDAC_Init(NSS_ADCDAC0);
-	Chip_ADCDAC_SetMuxADC(NSS_ADCDAC0, ADCDAC_IO_ANA0_0);
-	Chip_ADCDAC_SetInputRangeADC(NSS_ADCDAC0, ADCDAC_INPUTRANGE_WIDE);
-	Chip_ADCDAC_SetModeADC(NSS_ADCDAC0, ADCDAC_SINGLE_SHOT);
-	int adcInput=99;
-
-    NVIC_EnableIRQ(PIO0_IRQn); /* PIO0_IRQHandler is called when this interrupt fires. */
-    Chip_GPIO_EnableInt(NSS_GPIO, 0, 1);
+    Chip_ADCDAC_SetMuxDAC(NSS_ADCDAC0, ADCDAC_IO_ANA0_0);
+    Chip_ADCDAC_SetModeDAC(NSS_ADCDAC0, ADCDAC_CONTINUOUS);
 
 
-    for (;;) {
-    	int vMeasure;
-		// Toggle LED
-		LED_Toggle(LED_RED);
+    int i2dValue;
+	int i2dNativeValue;
+	Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1); /* Set pin function to analog */
+	Chip_I2D_Init(NSS_I2D);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_HIGH, 100);
+	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
+	for(;;){
+	Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 3500);
 
-//		// Read out ADC
-//		Chip_ADCDAC_StartADC(NSS_ADCDAC0);
-//		while (!(Chip_ADCDAC_ReadStatus(NSS_ADCDAC0) & ADCDAC_STATUS_ADC_DONE)) { /* wait */ }
-//		adcInput = Chip_ADCDAC_GetValueADC(NSS_ADCDAC0);
-//		vMeasure = ((float)adcInput*1.6)/4096;
+	Chip_I2D_Start(NSS_I2D);
+	while (!(Chip_I2D_ReadStatus(NSS_I2D) & I2D_STATUS_CONVERSION_DONE)) {
+		; /* wait */
+	}
+	i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
+	i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_HIGH, 100);
 
-        if (sButtonPressed) {
-            sButtonPressed = false;
-            sState = !sState; /* Switch between generating URL and TEXT+MIME. */
-        }
-        if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
-            if (sState) {
-                GenerateNdef_Url();
-            }
-            else {
-                GenerateNdef_TextMime(vMeasure);
-                /* Update the payloads for the next message. */
-                sText[0] = (uint8_t)((sText[0] == '9') ? '0' : (sText[0] + 1));
-                sBytes[0]++;
-            }
-        }
-        while (sFieldPresent) {
-            if (sMsgAvailable) {
-                sMsgAvailable = false;
-                ParseNdef();
-            }
-            Chip_Clock_System_BusyWait_ms(10);
-        }
-    }
-
-//    while (1) {
-//            // Toggle LED
-//            LED_Toggle(LED_RED);
+	}
+	Chip_I2D_DeInit(NSS_I2D);
+//    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
+//    Chip_ADCDAC_Init(NSS_ADCDAC0);
+//	Chip_ADCDAC_SetMuxADC(NSS_ADCDAC0, ADCDAC_IO_ANA0_0);
+//	Chip_ADCDAC_SetInputRangeADC(NSS_ADCDAC0, ADCDAC_INPUTRANGE_WIDE);
+//	Chip_ADCDAC_SetModeADC(NSS_ADCDAC0, ADCDAC_SINGLE_SHOT);
+//	int adcInput=99;
 //
-//            // Read out ADC
-//            Chip_ADCDAC_StartADC(NSS_ADCDAC0);
-//            while (!(Chip_ADCDAC_ReadStatus(NSS_ADCDAC0) & ADCDAC_STATUS_ADC_DONE)) { /* wait */ }
-//            adcInput = Chip_ADCDAC_GetValueADC(NSS_ADCDAC0);
+//    NVIC_EnableIRQ(PIO0_IRQn); /* PIO0_IRQHandler is called when this interrupt fires. */
+//    Chip_GPIO_EnableInt(NSS_GPIO, 0, 1);
 //
-//            // UART print to give out data
-//            UartTx_Init();
-//            UartTx_Printf("ADC:%d\n", adcInput);
-//            UartTx_DeInit();
 //
-//            // Pause
-//            Chip_Clock_System_BusyWait_ms(250);
+//    for (;;) {
+//    	int vMeasure;
+//		// Toggle LED
+//		LED_Toggle(LED_RED);
+//
+////		// Read out ADC
+////		Chip_ADCDAC_StartADC(NSS_ADCDAC0);
+////		while (!(Chip_ADCDAC_ReadStatus(NSS_ADCDAC0) & ADCDAC_STATUS_ADC_DONE)) { /* wait */ }
+////		adcInput = Chip_ADCDAC_GetValueADC(NSS_ADCDAC0);
+////		vMeasure = ((float)adcInput*1.6)/4096;
+//
+//        if (sButtonPressed) {
+//            sButtonPressed = false;
+//            sState = !sState; /* Switch between generating URL and TEXT+MIME. */
 //        }
-
-    return 0;
+//        if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
+//            if (sState) {
+//                GenerateNdef_Url();
+//            }
+//            else {
+//                GenerateNdef_TextMime(vMeasure);
+//                /* Update the payloads for the next message. */
+//                sText[0] = (uint8_t)((sText[0] == '9') ? '0' : (sText[0] + 1));
+//                sBytes[0]++;
+//            }
+//        }
+//        while (sFieldPresent) {
+//            if (sMsgAvailable) {
+//                sMsgAvailable = false;
+//                ParseNdef();
+//            }
+//            Chip_Clock_System_BusyWait_ms(10);
+//        }
+//    }
+//
+////    while (1) {
+////            // Toggle LED
+////            LED_Toggle(LED_RED);
+////
+////            // Read out ADC
+////            Chip_ADCDAC_StartADC(NSS_ADCDAC0);
+////            while (!(Chip_ADCDAC_ReadStatus(NSS_ADCDAC0) & ADCDAC_STATUS_ADC_DONE)) { /* wait */ }
+////            adcInput = Chip_ADCDAC_GetValueADC(NSS_ADCDAC0);
+////
+////            // UART print to give out data
+////            UartTx_Init();
+////            UartTx_Printf("ADC:%d\n", adcInput);
+////            UartTx_DeInit();
+////
+////            // Pause
+////            Chip_Clock_System_BusyWait_ms(250);
+////        }
+//
+//    return 0;
 }
