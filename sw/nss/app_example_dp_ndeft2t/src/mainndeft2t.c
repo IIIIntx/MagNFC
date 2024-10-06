@@ -118,7 +118,6 @@ static void GenerateNdef_TextMime(int measurement)
 {
     uint8_t instance[NDEFT2T_INSTANCE_SIZE];
     uint8_t buffer[NFC_SHARED_MEM_BYTE_SIZE ];
-    measurement = 42;
     NDEFT2T_CREATE_RECORD_INFO_T textRecordInfo = {.pString = (uint8_t *)"en" /* language code */,
                                                    .shortRecord = true,
                                                    .uriCode = 0 /* don't care */};
@@ -126,7 +125,7 @@ static void GenerateNdef_TextMime(int measurement)
                                                    .shortRecord = true,
                                                    .uriCode = 0 /* don't care */};
     NDEFT2T_CreateMessage(instance, buffer, NFC_SHARED_MEM_BYTE_SIZE, true);
-    snprintf((char*)sText, MAX_TEXT_PAYLOAD, "0 Hello World %d", measurement);
+    snprintf((char*)sText, MAX_TEXT_PAYLOAD, "AA %d", measurement);
     if (NDEFT2T_CreateTextRecord(instance, &textRecordInfo)) {
         if (NDEFT2T_WriteRecordPayload(instance, sText, sizeof(sText) - 1 /* exclude NUL char */)) {
             NDEFT2T_CommitRecord(instance);
@@ -202,6 +201,28 @@ int main(void)
 	i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
 	i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_HIGH, 100);
 
+	if (sButtonPressed) {
+		sButtonPressed = false;
+		sState = !sState; /* Switch between generating URL and TEXT+MIME. */
+	}
+	if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
+		if (sState) {
+			GenerateNdef_Url();
+		}
+		else {
+			GenerateNdef_TextMime(i2dValue);
+			/* Update the payloads for the next message. */
+			sText[0] = (uint8_t)((sText[0] == '9') ? '0' : (sText[0] + 1));
+			sBytes[0]++;
+		}
+	}
+	while (sFieldPresent) {
+		if (sMsgAvailable) {
+			sMsgAvailable = false;
+			ParseNdef();
+		}
+		Chip_Clock_System_BusyWait_ms(10);
+	}
 	}
 	Chip_I2D_DeInit(NSS_I2D);
 //    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
