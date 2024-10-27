@@ -178,28 +178,37 @@ int main(void)
 {
     Board_Init();
     NDEFT2T_Init();
+    UartTx_Init();
+//    Chip_IOCON_Init(NSS_IOCON);
 
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
     Chip_ADCDAC_Init(NSS_ADCDAC0);
     Chip_ADCDAC_SetMuxDAC(NSS_ADCDAC0, ADCDAC_IO_ANA0_0);
     Chip_ADCDAC_SetModeDAC(NSS_ADCDAC0, ADCDAC_CONTINUOUS);
-
+    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 4096);
+    Chip_ADCDAC_StartDAC(NSS_ADCDAC0);
+//    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_0 | IOCON_RMODE_PULLUP | IOCON_LPF_DISABLE);
 
     int i2dValue;
 	int i2dNativeValue;
+
 	Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1); /* Set pin function to analog */
 	Chip_I2D_Init(NSS_I2D);
-	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_HIGH, 100);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_100_1, I2D_CONVERTER_GAIN_LOW, 100);
 	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
 	for(;;){
-	Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 3500);
 
 	Chip_I2D_Start(NSS_I2D);
 	while (!(Chip_I2D_ReadStatus(NSS_I2D) & I2D_STATUS_CONVERSION_DONE)) {
 		; /* wait */
 	}
 	i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-	i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_HIGH, 100);
+	i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_100_1, I2D_CONVERTER_GAIN_LOW, 100);
+
+	//	 UART print to give out data
+
+	UartTx_Printf("%d\r\n", i2dValue);
+//	UartTx_DeInit();
 
 	if (sButtonPressed) {
 		sButtonPressed = false;
@@ -216,13 +225,13 @@ int main(void)
 			sBytes[0]++;
 		}
 	}
-	while (sFieldPresent) {
-		if (sMsgAvailable) {
-			sMsgAvailable = false;
-			ParseNdef();
-		}
-		Chip_Clock_System_BusyWait_ms(10);
-	}
+//	while (sFieldPresent) {
+//		if (sMsgAvailable) {
+//			sMsgAvailable = false;
+//			ParseNdef();
+//		}
+//		Chip_Clock_System_BusyWait_ms(10);
+//	}
 	}
 	Chip_I2D_DeInit(NSS_I2D);
 //    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
