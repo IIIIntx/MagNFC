@@ -1,0 +1,16 @@
+../src/msghandler.c:354:13:StopHostTimeoutTimer	0	static
+../src/msghandler.c:239:17:GetRemovalsHandler	344	static
+../src/msghandler.c:221:17:GetStartHandler	16	static
+../src/msghandler.c:202:17:StartHandler	16	static
+../src/msghandler.c:182:17:GetRhythmHandler	80	static
+../src/msghandler.c:167:17:SetRhythmHandler	16	static
+../src/msghandler.c:152:17:SetPristineHandler	16	static
+../src/msghandler.c:337:13:StartHostTimeoutTimer	16	static
+../src/msghandler.c:267:13:AddMimeRecord	32	static
+../src/msghandler.c:254:13:ResponseCb	16	static
+../src/msghandler.c:281:13:AddTextRecords	40	static
+../src/msghandler.c:65:6:App_FieldStatusCb	8	static
+../src/msghandler.c:85:6:App_MsgAvailableCb	32	static
+../src/msghandler.c:109:6:CT16B0_IRQHandler	0	static
+../src/msghandler.c:117:6:MsgHandler_Init	8	static
+../src/msghandler.c:134:6:MsgHandler_NFCCommunication	8	static

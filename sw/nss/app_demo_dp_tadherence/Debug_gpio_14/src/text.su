@@ -1,0 +1,7 @@
+../src/text.c:206:13:Number2String	16	static
+../src/text.c:168:13:Duration2String	32	static
+../src/text.c:98:7:Text_StatusNotStarted	8	static
+../src/text.c:104:7:Text_StatusStopped	24	static
+../src/text.c:115:7:Text_StatusOngoing	24	static
+../src/text.c:137:7:Text_IntakePositional	24	static
+../src/text.c:149:7:Text_IntakeNonPositional	24	static

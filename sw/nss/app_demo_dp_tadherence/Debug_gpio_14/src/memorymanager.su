@@ -1,0 +1,9 @@
+../src/memorymanager.c:122:13:SlotToOffset	0	static
+../src/memorymanager.c:53:6:Memory_Init	0	static
+../src/memorymanager.c:58:6:Memory_DeInit	8	static
+../src/memorymanager.c:63:6:Memory_StoreIntakeString	16	static
+../src/memorymanager.c:81:13:Memory_GetIntakeString	0	static
+../src/memorymanager.c:87:6:Memory_StoreData	24	static
+../src/memorymanager.c:100:6:Memory_GetStoredData	24	static
+../src/memorymanager.c:109:6:Memory_StoreEvent	8	static
+../src/memorymanager.c:116:16:Memory_GetEvents	0	static

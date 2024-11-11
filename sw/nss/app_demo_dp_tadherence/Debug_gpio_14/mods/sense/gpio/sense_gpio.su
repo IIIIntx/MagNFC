@@ -1,0 +1,6 @@
+../mods/sense/gpio/sense_gpio.c:18:6:SenseSpecific_Init	8	static
+../mods/sense/gpio/sense_gpio.c:28:6:SenseSpecific_DeInit	8	static
+../mods/sense/gpio/sense_gpio.c:33:5:SenseSpecific_GetAmountOfGroups	0	static
+../mods/sense/gpio/sense_gpio.c:38:6:SenseSpecific_GroupPositional	0	static
+../mods/sense/gpio/sense_gpio.c:44:10:SenseSpecific_GetPillsInGroup	24	static
+../mods/sense/gpio/sense_gpio.c:82:5:SenseSpecific_InitialPillCount	0	static
