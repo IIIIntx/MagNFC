@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # 初始化串口
 ser = serial.Serial(
         port='COM6',
-        baudrate=38400,
+        baudrate=115200,
         bytesize=serial.EIGHTBITS,
         parity=serial.PARITY_EVEN,
         stopbits=serial.STOPBITS_ONE,
@@ -81,12 +81,13 @@ def send_data(data, function):
             if responseToProcess:
                 if responseToProcess[1] == dataLenth and responseToProcess[4] == 0x34:
                     data_points = [
-                    responseToProcess[11:15].decode('ascii', errors='ignore'),
-                    responseToProcess[15:19].decode('ascii', errors='ignore'),
-                    responseToProcess[19:23].decode('ascii', errors='ignore'),
-                    responseToProcess[23:27].decode('ascii', errors='ignore')
+                    responseToProcess[11] * 100 + responseToProcess[12],
+                    responseToProcess[13] * 100 + responseToProcess[14],
+                    responseToProcess[15] * 100 + responseToProcess[16],
+                    responseToProcess[17] * 100 + responseToProcess[18],
+                    responseToProcess[19] * 100 + responseToProcess[20]
                     ]
-
+                    print(data_points)
                     # Convert ASCII strings to integers for plotting
                     values = [int(s) for s in data_points]
                     return values
@@ -140,14 +141,14 @@ def get_data():
     plt.ion()  # 启用交互模式
     fig, ax = plt.subplots()
     line, = ax.plot([])
-    ax.set_ylim(0, 2000)  # 设置y轴范围，根据你的数据范围进行调整
+    ax.set_ylim(0, 5000)  # 设置y轴范围，根据你的数据范围进行调整
 
 
     # 请求数据
     while(True):
         dataRequestFrame = bytearray([0xFA, 0X0E, 0XFF, 0x00 if sendToggle else 0x40, 0x34, 0x01, 0x06, 0x1C, 0x00, baseLine, 0x00, totalLine, 0x00])
         values = send_data(dataRequestFrame, 'dataRequestFrame')
-        time.sleep(0.01)
+        time.sleep(0.05)
         sendToggle = not sendToggle
 
         if values:
@@ -159,7 +160,7 @@ def get_data():
             line.set_xdata(range(len(yPlot)))
             ax.relim()
             ax.autoscale_view()
-            plt.pause(0.01)  # 更新图形，可以根据需要调整刷新频率
+            plt.pause(0.05)  # 更新图形，可以根据需要调整刷新频率
 
 def main():
     # initial_frame()

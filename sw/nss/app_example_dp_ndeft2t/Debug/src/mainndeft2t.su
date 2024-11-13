@@ -3,6 +3,6 @@ D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\in
 ../src/mainndeft2t.c:76:6:App_FieldStatusCb	16	static
 ../src/mainndeft2t.c:92:6:App_MsgAvailableCb	8	static
 ../src/mainndeft2t.c:100:13:GenerateNdef_Url	568	static
-../src/mainndeft2t.c:117:13:GenerateNdef_TextMime	600	static
-../src/mainndeft2t.c:145:13:ParseNdef	568	static
-../src/mainndeft2t.c:179:5:main	56	static
+../src/mainndeft2t.c:117:13:GenerateNdef_TextMime	592	static
+../src/mainndeft2t.c:149:13:ParseNdef	568	static
+../src/mainndeft2t.c:183:5:main	48	static

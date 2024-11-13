@@ -33,7 +33,7 @@ static const uint8_t sUrl[MAX_URI_PAYLOAD + 1 /* NUL */] = "nxp.com/NTAGSMARTSEN
 #define MAX_TEXT_PAYLOAD (254 - (NDEFT2T_MSG_OVERHEAD(true, \
         NDEFT2T_TEXT_RECORD_OVERHEAD(true, sizeof(LOCALE) - 1) + \
         NDEFT2T_MIME_RECORD_OVERHEAD(true, sizeof(MIME) - 1)) / 2))
-uint8_t sText[MAX_TEXT_PAYLOAD] = "0 Hello World";
+uint8_t sText[MAX_TEXT_PAYLOAD] = "AAHello World";
 
 /** @copydoc MAX_TEXT_PAYLOAD */
 #define MAX_MIME_PAYLOAD MAX_TEXT_PAYLOAD
@@ -116,6 +116,7 @@ static void GenerateNdef_Url(void)
 /** Generates a dual-record NDEF message containing a TEXT and a MIME record, and copies it to the NFC shared memory. */
 static void GenerateNdef_TextMime(int measurement[5])
 {
+	int j;
     uint8_t instance[NDEFT2T_INSTANCE_SIZE];
     uint8_t buffer[NFC_SHARED_MEM_BYTE_SIZE ];
     NDEFT2T_CREATE_RECORD_INFO_T textRecordInfo = {.pString = (uint8_t *)"en" /* language code */,
@@ -125,9 +126,12 @@ static void GenerateNdef_TextMime(int measurement[5])
 //                                                   .shortRecord = true,
 //                                                   .uriCode = 0 /* don't care */};
     NDEFT2T_CreateMessage(instance, buffer, NFC_SHARED_MEM_BYTE_SIZE, true);
-    snprintf((char*)sText, MAX_TEXT_PAYLOAD, "AA %d%d%d%d%d",
-    		measurement[0], measurement[1], measurement[2],
-			measurement[3], measurement[4]);
+//    snprintf((char*)sText, MAX_TEXT_PAYLOAD, "AA %d%d%d%d%d",
+    for (j = 1; j < 6; j++) {
+    		uint8_t value = measurement[j];
+            sText[j * 2 + 1] = (value / 100) & 0xFF;  // Get the high byte
+            sText[j * 2 + 2] = (value % 100) & 0xFF;  // Get the low byte
+        }
     if (NDEFT2T_CreateTextRecord(instance, &textRecordInfo)) {
         if (NDEFT2T_WriteRecordPayload(instance, sText, sizeof(sText) - 1 /* exclude NUL char */)) {
             NDEFT2T_CommitRecord(instance);
@@ -181,58 +185,47 @@ int main(void)
     Board_Init();
     NDEFT2T_Init();
     UartTx_Init();
+    int i;
 //    Chip_IOCON_Init(NSS_IOCON);
 
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
     Chip_ADCDAC_Init(NSS_ADCDAC0);
     Chip_ADCDAC_SetMuxDAC(NSS_ADCDAC0, ADCDAC_IO_ANA0_0);
     Chip_ADCDAC_SetModeDAC(NSS_ADCDAC0, ADCDAC_CONTINUOUS);
-    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 800);
+    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 950);
 
     int i2dValue;
 	int i2dNativeValue;
-	int measurement[] = {1234, 1345, 1456, 1567, 1678};
+	int measurement[5];
+
 
 	Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1); /* Set pin function to analog */
 	Chip_I2D_Init(NSS_I2D);
-	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 5);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 5);
 	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
-	for(;;){
+	for (;;)
+	{
+//		for(i;i<5;i++){
+			Chip_I2D_Start(NSS_I2D);
+			while (!(Chip_I2D_ReadStatus(NSS_I2D) & I2D_STATUS_CONVERSION_DONE)) {
+				; /* wait */
+			}
+			i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
+			i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 5);
 
-	Chip_I2D_Start(NSS_I2D);
-	while (!(Chip_I2D_ReadStatus(NSS_I2D) & I2D_STATUS_CONVERSION_DONE)) {
-		; /* wait */
-	}
-	i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-	i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 5);
+			//	 UART print to give out data
 
-	//	 UART print to give out data
-
-	UartTx_Printf("%d\r\n", i2dValue);
-//	UartTx_DeInit();
-
-//	if (sButtonPressed) {
-//		sButtonPressed = false;
-//		sState = !sState; /* Switch between generating URL and TEXT+MIME. */
-//	}
-//	if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
-//		if (sState) {
-//			GenerateNdef_Url();
+			UartTx_Printf("%d\r\n", i2dValue);
+	//		UartTx_DeInit();
+			measurement[i] = i2dValue/10000;
 //		}
-//		else {
-//			GenerateNdef_TextMime(i2dValue);
-//			/* Update the payloads for the next message. */
-//			sText[0] = (uint8_t)((sText[0] == '9') ? '0' : (sText[0] + 1));
-//			sBytes[0]++;
-//		}
-//	}
-	if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
-		GenerateNdef_TextMime(measurement);
-		/* Update the payloads for the next message. */
-		sText[0] = (uint8_t)((sText[0] == '9') ? '0' : (sText[0] + 1));
-		sBytes[0]++;
-	}
-
+		if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
+			GenerateNdef_TextMime(measurement);
+			/* Update the payloads for the next message. */
+			sText[0] = (uint8_t)((sText[0] == '9') ? '0' : (sText[0] + 1));
+			sBytes[0]++;
+		}
+		i = 0;
 
 
 
