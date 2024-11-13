@@ -1,6 +1,8 @@
 import serial
 import time
 import matplotlib.pyplot as plt
+import pandas as pd
+import datetime
 
 # 初始化串口
 ser = serial.Serial(
@@ -20,6 +22,9 @@ dataLenth = 0x20 # SOF+10+20(数据长度)+2CRC
 dataRead = [0] * 300
 xPlot = range(300)
 yPlot = [0] * 300
+
+timeNow = datetime.datetime.now()
+timeStamp = timeNow.strftime("D%H%M")
 
 def calculate_crc(data):
     # CRC-16/MCRF4XX 计算
@@ -85,7 +90,12 @@ def send_data(data, function):
                     responseToProcess[13] * 100 + responseToProcess[14],
                     responseToProcess[15] * 100 + responseToProcess[16],
                     responseToProcess[17] * 100 + responseToProcess[18],
-                    responseToProcess[19] * 100 + responseToProcess[20]
+                    responseToProcess[19] * 100 + responseToProcess[20],
+                    responseToProcess[21] * 100 + responseToProcess[22],
+                    responseToProcess[23] * 100 + responseToProcess[24],
+                    responseToProcess[25] * 100 + responseToProcess[26],
+                    responseToProcess[27] * 100 + responseToProcess[28],
+                    responseToProcess[29] * 100 + responseToProcess[30]
                     ]
                     print(data_points)
                     # Convert ASCII strings to integers for plotting
@@ -141,7 +151,6 @@ def get_data():
     plt.ion()  # 启用交互模式
     fig, ax = plt.subplots()
     line, = ax.plot([])
-    ax.set_ylim(0, 5000)  # 设置y轴范围，根据你的数据范围进行调整
 
 
     # 请求数据
@@ -153,14 +162,18 @@ def get_data():
 
         if values:
             dataRead.extend(values)
+            yPrePlot = yPlot
             yPlot = dataRead[-300:]
 
-            # graph.remove()
-            line.set_ydata(yPlot)
-            line.set_xdata(range(len(yPlot)))
-            ax.relim()
-            ax.autoscale_view()
-            plt.pause(0.05)  # 更新图形，可以根据需要调整刷新频率
+            if yPrePlot != yPlot:
+                # graph.remove()
+                line.set_ydata(yPlot)
+                line.set_xdata(range(len(yPlot)))
+                ax.relim()
+                ax.autoscale_view()
+                plt.pause(0.05)  # 更新图形，可以根据需要调整刷新频率
+                pd.DataFrame(dataRead).to_csv(f"D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/ReadScript/test_{timeStamp}.csv")
+                ax.set_ylim(min(yPlot)-300, max(yPlot)+300)  # 设置y轴范围，根据你的数据范围进行调整
 
 def main():
     # initial_frame()
