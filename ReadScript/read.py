@@ -141,7 +141,7 @@ def get_data():
     plt.ion()  # 启用交互模式
     fig, ax = plt.subplots()
     line, = ax.plot([])
-    ax.set_ylim(0, 5000)  # 设置y轴范围，根据你的数据范围进行调整
+    ax.set_ylim(1000, 1800)  # 设置y轴范围，根据你的数据范围进行调整
 
 
     # 请求数据
