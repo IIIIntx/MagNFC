@@ -123,7 +123,6 @@ int main(void)
     UartTx_Init();
     int i;
     Chip_Clock_System_SetClockFreq(1 * 1000 * 1000);
-    Chip_SysCon_Peripheral_DisablePower(SYSCON_PERIPHERAL_POWER_C2D);
     Chip_SysCon_Peripheral_DisablePower(SYSCON_PERIPHERAL_POWER_TSEN);
 
 
@@ -136,10 +135,11 @@ int main(void)
     Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 1500);
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1); /* Set pin function to analog */
     Chip_I2D_Init(NSS_I2D);
-	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 10);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 5);
 	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
 	Chip_I2D_Int_SetEnabledMask(NSS_I2D,I2D_INT_CONVERSION_RDY);
 	NVIC_EnableIRQ(I2D_IRQn);
+	Chip_Clock_System_BusyWait_ms(10);
 
     int i2dValue;
 	int i2dNativeValue;
@@ -149,13 +149,13 @@ int main(void)
 	{
 		for(i=0;i<10;i++){
 			Chip_I2D_Start(NSS_I2D);
-			Chip_PMU_PowerMode_EnterSleep();
+//			Chip_PMU_PowerMode_EnterSleep();
 			i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-			i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 10);
+			i2dValue = Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 5);
 			//	 UART print to give out data
-	//		UartTx_DeInit();
-			measurement[i] = i2dValue/10000;
+			measurement[i] = i2dValue;
 			UartTx_Printf("%d\r\n", measurement[i]);
+//			UartTx_DeInit();
 		}
 		if (sFieldPresent) { /* Update the NDEF message once when there is an NFC field */
 			GenerateNdef_TextMime(measurement);
