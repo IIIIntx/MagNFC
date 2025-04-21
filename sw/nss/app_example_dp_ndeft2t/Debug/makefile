@@ -40,14 +40,14 @@ all:
 main-build: app_example_dp_ndeft2t.axf
 
 dependents:
-	-cd D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug && $(MAKE) all
-	-cd D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug && $(MAKE) all
+	-cd D:/OneDrive\ -\ HKUST\ (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug && $(MAKE) all
+	-cd D:/OneDrive\ -\ HKUST\ (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug && $(MAKE) all
 
 # Tool invocations
-app_example_dp_ndeft2t.axf: $(OBJS) $(USER_OBJS) D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug/liblib_board_dp.a D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug/liblib_chip_nss.a makefile $(OPTIONAL_TOOL_DEPS)
+app_example_dp_ndeft2t.axf: $(OBJS) $(USER_OBJS) D:/OneDrive\ -\ HKUST\ (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug/liblib_board_dp.a D:/OneDrive\ -\ HKUST\ (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug/liblib_chip_nss.a makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Debug" -L"D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Debug" -Xlinker -Map="app_example_dp_ndeft2t.map" -Xlinker --gc-sections -mcpu=cortex-m0plus -mthumb -T app_example_dp_ndeft2t_Debug.ld -o "app_example_dp_ndeft2t.axf" $(OBJS) $(USER_OBJS) $(LIBS) -llib_board_dp -llib_chip_nss
+	arm-none-eabi-gcc -nostdlib -L"D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Debug" -L"D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Debug" -Xlinker -Map="app_example_dp_ndeft2t.map" -Xlinker --gc-sections -mcpu=cortex-m0plus -mthumb -T app_example_dp_ndeft2t_Debug.ld -o "app_example_dp_ndeft2t.axf" $(OBJS) $(USER_OBJS) $(LIBS) -llib_board_dp -llib_chip_nss
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -62,7 +62,7 @@ post-build:
 	-@echo ' '
 
 .PHONY: all clean dependents main-build post-build
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug/liblib_board_dp.a:
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug/liblib_chip_nss.a:
+D:/OneDrive\ -\ HKUST\ (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug/liblib_board_dp.a:
+D:/OneDrive\ -\ HKUST\ (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug/liblib_chip_nss.a:
 
 -include ../makefile.targets

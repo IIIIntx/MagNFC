@@ -1,6 +1,6 @@
-D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:719:22:NVIC_SystemReset	0	static
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:38:13:data_init	8	static
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:50:13:bss_init	0	static
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:60:13:defaultIntHandler	8	static
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:99:6:Startup_VarInit	8	static
-D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:68:13:defaultResetISR	8	static
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:719:22:NVIC_SystemReset	0	static
+D:/OneDrive - HKUST (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:38:13:data_init	8	static
+D:/OneDrive - HKUST (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:50:13:bss_init	0	static
+D:/OneDrive - HKUST (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:60:13:defaultIntHandler	8	static
+D:/OneDrive - HKUST (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:99:6:Startup_VarInit	8	static
+D:/OneDrive - HKUST (Guangzhou)/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/mods/startup/startup.c:68:13:defaultResetISR	8	static
