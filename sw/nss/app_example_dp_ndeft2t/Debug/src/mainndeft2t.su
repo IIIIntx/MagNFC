@@ -1,13 +1,13 @@
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:616:22:NVIC_EnableIRQ	16	static
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:628:22:NVIC_DisableIRQ	16	static
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:683:22:NVIC_SetPriority	24	static
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:152:20:Chip_GPIO_SetPinDIROutput	16	static
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:281:20:Chip_GPIO_SetPinOutHigh	16	static
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:306:20:Chip_GPIO_SetPinOutLow	16	static
-D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:331:20:Chip_GPIO_SetPinToggle	24	static
-../src/mainndeft2t.c:80:6:I2D_IRQHandler	8	static
-../src/mainndeft2t.c:91:6:NFC_IRQHandler	24	static
-../src/mainndeft2t.c:115:6:App_FieldStatusCb	16	static
-../src/mainndeft2t.c:131:6:App_MsgAvailableCb	8	static
-../src/mainndeft2t.c:139:13:GenerateNdef_TextMime	24	static
-../src/mainndeft2t.c:159:5:main	32	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:616:22:NVIC_EnableIRQ	16	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:628:22:NVIC_DisableIRQ	16	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/core_cm0plus.h:683:22:NVIC_SetPriority	24	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:152:20:Chip_GPIO_SetPinDIROutput	16	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:281:20:Chip_GPIO_SetPinOutHigh	16	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:306:20:Chip_GPIO_SetPinOutLow	16	static
+D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:331:20:Chip_GPIO_SetPinToggle	24	static
+../src/mainndeft2t.c:84:6:I2D_IRQHandler	8	static
+../src/mainndeft2t.c:95:6:NFC_IRQHandler	24	static
+../src/mainndeft2t.c:116:6:App_FieldStatusCb	16	static
+../src/mainndeft2t.c:132:6:App_MsgAvailableCb	8	static
+../src/mainndeft2t.c:140:13:GenerateNdef_TextMime	24	static
+../src/mainndeft2t.c:164:5:main	32	static

@@ -40,6 +40,8 @@ void Board_Init(void)
         Chip_IOCON_SetPinConfig(NSS_IOCON, 10, IOCON_FUNC_2 | BOARD_PIO10_PULL);
         Chip_IOCON_SetPinConfig(NSS_IOCON, 11, IOCON_FUNC_2 | BOARD_PIO11_PULL);
     }
+    Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
+    Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_9);
 
     Chip_RTC_Init(NSS_RTC);
     Chip_EEPROM_Init(NSS_EEPROM);

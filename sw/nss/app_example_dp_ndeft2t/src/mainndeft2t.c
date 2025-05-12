@@ -25,6 +25,9 @@
 /** The URL will be used in a single-record NDEF message. */
 #define MAX_URI_PAYLOAD (254 - NDEFT2T_MSG_OVERHEAD(true, NDEFT2T_URI_RECORD_OVERHEAD(true)))
 
+// to
+#define debugPin true
+
 /**
  * The text and the MIME data are always presented together, in a dual-record NDEF message.
  * Payload length is split evenly between TEXT and MIME.
@@ -73,6 +76,7 @@ static void GenerateNdef_TextMime(int measurement[5]);
 
 // 将measurement数组移到全局作用域
 int measurement[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};  // 初始化为0
+int measurementEnum = 0;
 
 // 添加I2D转换完成标志位
 volatile bool i2dConversionComplete = false;
@@ -82,7 +86,7 @@ void I2D_IRQHandler(void){
 		if ((Chip_I2D_ReadStatus(NSS_I2D) & I2D_STATUS_CONVERSION_DONE)) {
 		/* No need to check interrupt flag here, as I2D_STATUS_CONVERSION_DONE status flag holds the same meaning. */
 		Chip_I2D_Int_ClearRawStatus(NSS_I2D, I2D_INT_CONVERSION_RDY);
-		Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_9);
+		Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
 		i2dConversionComplete = true;  // 设置转换完成标志
 		}
 	}
@@ -97,11 +101,8 @@ void NFC_IRQHandler(void){
         nfcTransWaitFlag = false;
         // 将当前采集的数据写入NDEF消息
         GenerateNdef_TextMime(measurement);
-        // 重置measurement数组，开始新一轮采集
-        for(int i = 0; i < 10; i++) {
-            measurement[i] = 0;
-        }
-        Chip_GPIO_SetPinToggle(NSS_GPIO, 0, IOCON_PIO0_2);
+        Chip_Clock_System_BusyWait_ms(1);
+        // Chip_GPIO_SetPinToggle(NSS_GPIO, 0, IOCON_PIO0_2);
     }
 
     Chip_NFC_Int_ClearRawStatus(NSS_NFC, status);
@@ -142,58 +143,74 @@ static void GenerateNdef_TextMime(int measurement[10])
     uint8_t *data_ptr = &message[10];  // 从第9字节开始（下标8）
 
     // 将每个4位数拆分为高2位和低2位，存入message
-    for (int i = 0; i < 10; i++) {
-        data_ptr[2*i]   = (measurement[i] / 100) & 0xFF;  // 高2位（如12→0x0C）
-        data_ptr[2*i+1] = (measurement[i] % 100) & 0xFF;  // 低2位（如34→0x22）
+    for (measurementEnum = 0; measurementEnum < 10; measurementEnum++) {
+        data_ptr[2*measurementEnum]   = (measurement[measurementEnum] / 100) & 0xFF;  // 高2位（如12→0x0C）
+        data_ptr[2*measurementEnum+1] = (measurement[measurementEnum] % 100) & 0xFF;  // 低2位（如34→0x22）
     }
 	ASSERT(NFC_SHARED_MEM_BYTE_SIZE >= sizeof(message));
 
 	if (Chip_NFC_WordWrite(NSS_NFC, (uint32_t*)NFC_SHARED_MEM_START, (uint32_t*)message, sizeof(message) / 4)) {
 		/* Success. The message can now be read by a PCD (Proximity Coupled Device) like a USB NFC read or a phone. */
 	}
-	Chip_GPIO_SetPinToggle(NSS_GPIO, 0, IOCON_PIO0_1);
+	 Chip_GPIO_SetPinToggle(NSS_GPIO, 0, IOCON_PIO0_1);
+	// 重置measurement数组，开始新一轮采集
+	for(int i = 0; i < 10; i++) {
+		measurement[i] = 0;
+	}
 }
 
 /* ------------------------------------------------------------------------- */
 
 int main(void)
 {
+    // 只初始化必要的外设
     Board_Init();
     NDEFT2T_Init();
+    GenerateNdef_TextMime(measurement);
 //    UartTx_Init();
     int i, j;
-    Chip_Clock_System_SetClockFreq(1 * 1000 * 1000);
+    Chip_Clock_System_SetClockFreq(100000);
     Chip_SysCon_Peripheral_DisablePower(SYSCON_PERIPHERAL_POWER_TSEN);
 
     //NFC interrupt
     NVIC_EnableIRQ(NFC_IRQn);
     Chip_NFC_Int_SetEnabledMask(NSS_NFC, NFC_INT_TARGETREAD);
-
-    //debug pin
+    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_0, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
+    Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_9, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
-    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_1, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
-    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_2, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
-    Chip_GPIO_SetPinDIROutput(NSS_GPIO, 0, IOCON_PIO0_9);
-    Chip_GPIO_SetPinDIROutput(NSS_GPIO, 0, IOCON_PIO0_1);
-    Chip_GPIO_SetPinDIROutput(NSS_GPIO, 0, IOCON_PIO0_2);
-    Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_9);
-	Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_9);
-	Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_1);
-	Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_1);
-	Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_2);
-	Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_2);
+        Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_9);
 
-
+#if debugPin
+    //debug pin
+     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_0, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
+     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_1, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
+     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_2, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
+     Chip_GPIO_SetPinDIROutput(NSS_GPIO, 0, IOCON_PIO0_0);
+     Chip_GPIO_SetPinDIROutput(NSS_GPIO, 0, IOCON_PIO0_1);
+     Chip_GPIO_SetPinDIROutput(NSS_GPIO, 0, IOCON_PIO0_2);
+     Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_0);
+     Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
+     Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_1);
+     Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_1);
+     Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_2);
+     Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_2);
+#else
+	 Chip_GPIO_DeInit(NSS_GPIO);
+#endif
+    
+    // 配置I2D
+    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
+    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1);
     Chip_ADCDAC_Init(NSS_ADCDAC0);
     Chip_ADCDAC_SetMuxDAC(NSS_ADCDAC0, ADCDAC_IO_ANA0_0);
     Chip_ADCDAC_SetModeDAC(NSS_ADCDAC0, ADCDAC_CONTINUOUS);
     Chip_ADCDAC_SetModeADC(NSS_ADCDAC0, ADCDAC_SINGLE_SHOT);
     Chip_ADCDAC_SetInputRangeADC(NSS_ADCDAC0, ADCDAC_INPUTRANGE_WIDE);
-    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
-    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 1200);
-    Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1); /* Set pin function to analog */
+    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 2500);
+    
+    // 配置I2D中断
     Chip_I2D_Init(NSS_I2D);
-	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 3);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 3);
 	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
 	Chip_I2D_Int_SetEnabledMask(NSS_I2D,I2D_INT_CONVERSION_RDY);
 	NVIC_EnableIRQ(I2D_IRQn);
@@ -208,12 +225,12 @@ int main(void)
 
 	for (;;)
 	{
-		for(i=0;i<10;i++){
-			for(j=0;j<5;j++){
+		for(measurementEnum=0;measurementEnum<10;measurementEnum++){
+			for(j=0;j<2;j++){
 				i2dConversionComplete = false;  // 重置转换完成标志
 				Chip_I2D_Start(NSS_I2D);
-				Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_9);
-				Chip_PMU_PowerMode_EnterSleep();
+				 Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_0);
+//				Chip_PMU_PowerMode_EnterSleep();
 				
 				// 等待I2D转换完成
 				while(!i2dConversionComplete) {
@@ -221,15 +238,15 @@ int main(void)
 				}
 				
 				i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 3)/100;
+				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 3)/100;
 			}
 
 			// 每个元素递增
 			//	 UART print to give out data
-//			measurement[i] = i2dTotalValue/5;
-			measurement[i] = (measurement[i] + i*100) % 10000;  // 限制在0-9999范围内
+			measurement[measurementEnum] = i2dTotalValue/2;
+//			measurement[i] = (measurement[i] + i*100) % 10000;  // 限制在0-9999范围内
 			i2dTotalValue = 0;
-//			UartTx_Printf("%d\r\n", measurement[i]);
+//			UartTx_Printf("%04d\r\n", measurement[measurementEnum]);
 //			UartTx_DeInit();
 		}
 
