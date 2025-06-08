@@ -5,9 +5,18 @@ D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\in
 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:281:20:Chip_GPIO_SetPinOutHigh	16	static
 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:306:20:Chip_GPIO_SetPinOutLow	16	static
 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\inc/gpio_nss.h:331:20:Chip_GPIO_SetPinToggle	24	static
+<<<<<<< HEAD
 ../src/mainndeft2t.c:84:6:I2D_IRQHandler	8	static
 ../src/mainndeft2t.c:95:6:NFC_IRQHandler	24	static
 ../src/mainndeft2t.c:116:6:App_FieldStatusCb	16	static
 ../src/mainndeft2t.c:132:6:App_MsgAvailableCb	8	static
 ../src/mainndeft2t.c:140:13:GenerateNdef_TextMime	24	static
 ../src/mainndeft2t.c:164:5:main	32	static
+=======
+../src/mainndeft2t.c:81:6:I2D_IRQHandler	8	static
+../src/mainndeft2t.c:92:6:NFC_IRQHandler	24	static
+../src/mainndeft2t.c:113:6:App_FieldStatusCb	16	static
+../src/mainndeft2t.c:129:6:App_MsgAvailableCb	8	static
+../src/mainndeft2t.c:137:13:GenerateNdef_TextMime	24	static
+../src/mainndeft2t.c:161:5:main	40	static
+>>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
