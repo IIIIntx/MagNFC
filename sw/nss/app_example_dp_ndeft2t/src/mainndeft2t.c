@@ -86,11 +86,7 @@ void I2D_IRQHandler(void){
 		if ((Chip_I2D_ReadStatus(NSS_I2D) & I2D_STATUS_CONVERSION_DONE)) {
 		/* No need to check interrupt flag here, as I2D_STATUS_CONVERSION_DONE status flag holds the same meaning. */
 		Chip_I2D_Int_ClearRawStatus(NSS_I2D, I2D_INT_CONVERSION_RDY);
-<<<<<<< HEAD
 		Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
-=======
-		 Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
->>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
 		i2dConversionComplete = true;  // 设置转换完成标志
 		}
 	}
@@ -172,7 +168,7 @@ int main(void)
 //    Chip_GPIO_DeInit(NSS_GPIO);
     NDEFT2T_Init();
     GenerateNdef_TextMime(measurement);
-//    UartTx_Init();
+    UartTx_Init();
     int i, j;
     Chip_Clock_System_SetClockFreq(100000);
     Chip_SysCon_Peripheral_DisablePower(SYSCON_PERIPHERAL_POWER_TSEN);
@@ -180,16 +176,12 @@ int main(void)
     //NFC interrupt
     NVIC_EnableIRQ(NFC_IRQn);
     Chip_NFC_Int_SetEnabledMask(NSS_NFC, NFC_INT_TARGETREAD);
-<<<<<<< HEAD
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_0, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
     Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_0);
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_9, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
         Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_9);
 
 #if debugPin
-=======
-
->>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
     //debug pin
      Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_0, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
      Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_PIO0_1, IOCON_FUNC_0 | IOCON_I2CMODE_PIO);
@@ -203,12 +195,9 @@ int main(void)
      Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_1);
      Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_2);
      Chip_GPIO_SetPinOutLow(NSS_GPIO, 0, IOCON_PIO0_2);
-<<<<<<< HEAD
 #else
 	 Chip_GPIO_DeInit(NSS_GPIO);
 #endif
-=======
->>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
     
     // 配置I2D
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
@@ -218,11 +207,7 @@ int main(void)
     Chip_ADCDAC_SetModeDAC(NSS_ADCDAC0, ADCDAC_CONTINUOUS);
     Chip_ADCDAC_SetModeADC(NSS_ADCDAC0, ADCDAC_SINGLE_SHOT);
     Chip_ADCDAC_SetInputRangeADC(NSS_ADCDAC0, ADCDAC_INPUTRANGE_WIDE);
-<<<<<<< HEAD
     Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 2500);
-=======
-    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 1000);
->>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
     
     // 配置I2D中断
     Chip_I2D_Init(NSS_I2D);
@@ -242,19 +227,11 @@ int main(void)
 	for (;;)
 	{
 		for(measurementEnum=0;measurementEnum<10;measurementEnum++){
-<<<<<<< HEAD
 			for(j=0;j<2;j++){
 				i2dConversionComplete = false;  // 重置转换完成标志
 				Chip_I2D_Start(NSS_I2D);
 				 Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_0);
 //				Chip_PMU_PowerMode_EnterSleep();
-=======
-			for(j=0;j<5;j++){
-				i2dConversionComplete = false;  // 重置转换完成标志
-				Chip_I2D_Start(NSS_I2D);
-				 Chip_GPIO_SetPinOutHigh(NSS_GPIO, 0, IOCON_PIO0_0);
-				Chip_PMU_PowerMode_EnterSleep();
->>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
 				
 				// 等待I2D转换完成
 				while(!i2dConversionComplete) {
@@ -262,19 +239,15 @@ int main(void)
 				}
 				
 				i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 3)/100;
+				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 2)/100;
 			}
 
 			// 每个元素递增
 			//	 UART print to give out data
-<<<<<<< HEAD
 			measurement[measurementEnum] = i2dTotalValue/2;
-=======
-			measurement[measurementEnum] = i2dTotalValue/5;
->>>>>>> d45c762f947b94edc6efea74ff33100585aaa0cf
 //			measurement[i] = (measurement[i] + i*100) % 10000;  // 限制在0-9999范围内
 			i2dTotalValue = 0;
-//			UartTx_Printf("%04d\r\n", measurement[measurementEnum]);
+			UartTx_Printf("%04d\r\n", measurement[measurementEnum]);
 //			UartTx_DeInit();
 		}
 
