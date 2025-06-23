@@ -168,7 +168,7 @@ int main(void)
 //    Chip_GPIO_DeInit(NSS_GPIO);
     NDEFT2T_Init();
     GenerateNdef_TextMime(measurement);
-    UartTx_Init();
+//    UartTx_Init();
     int i, j;
     Chip_Clock_System_SetClockFreq(100000);
     Chip_SysCon_Peripheral_DisablePower(SYSCON_PERIPHERAL_POWER_TSEN);
@@ -207,11 +207,11 @@ int main(void)
     Chip_ADCDAC_SetModeDAC(NSS_ADCDAC0, ADCDAC_CONTINUOUS);
     Chip_ADCDAC_SetModeADC(NSS_ADCDAC0, ADCDAC_SINGLE_SHOT);
     Chip_ADCDAC_SetInputRangeADC(NSS_ADCDAC0, ADCDAC_INPUTRANGE_WIDE);
-    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 2500);
+    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 3000);
     
     // 配置I2D中断
     Chip_I2D_Init(NSS_I2D);
-	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 3);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 3);
 	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
 	Chip_I2D_Int_SetEnabledMask(NSS_I2D,I2D_INT_CONVERSION_RDY);
 	NVIC_EnableIRQ(I2D_IRQn);
@@ -239,7 +239,7 @@ int main(void)
 				}
 				
 				i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_2_1, I2D_CONVERTER_GAIN_LOW, 2)/100;
+				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 3)/1000;
 			}
 
 			// 每个元素递增
@@ -247,7 +247,7 @@ int main(void)
 			measurement[measurementEnum] = i2dTotalValue/2;
 //			measurement[i] = (measurement[i] + i*100) % 10000;  // 限制在0-9999范围内
 			i2dTotalValue = 0;
-			UartTx_Printf("%04d\r\n", measurement[measurementEnum]);
+//			UartTx_Printf("%04d\r\n", measurement[measurementEnum]);
 //			UartTx_DeInit();
 		}
 
