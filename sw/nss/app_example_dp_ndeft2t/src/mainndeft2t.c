@@ -132,10 +132,10 @@ int main(void)
     Chip_ADCDAC_SetModeADC(NSS_ADCDAC0, ADCDAC_SINGLE_SHOT);
     Chip_ADCDAC_SetInputRangeADC(NSS_ADCDAC0, ADCDAC_INPUTRANGE_WIDE);
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_0, IOCON_FUNC_1);
-    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 4096);
+    Chip_ADCDAC_WriteOutputDAC(NSS_ADCDAC0, 3000);
     Chip_IOCON_SetPinConfig(NSS_IOCON, IOCON_ANA0_4, IOCON_FUNC_1); /* Set pin function to analog */
     Chip_I2D_Init(NSS_I2D);
-	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_1_1, I2D_CONVERTER_GAIN_LOW, 5);
+	Chip_I2D_Setup(NSS_I2D, I2D_SINGLE_SHOT, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 5);
 	Chip_I2D_SetMuxInput(NSS_I2D, I2D_INPUT_ANA0_4);
 	Chip_I2D_Int_SetEnabledMask(NSS_I2D,I2D_INT_CONVERSION_RDY);
 	NVIC_EnableIRQ(I2D_IRQn);
@@ -148,15 +148,15 @@ int main(void)
 	for (;;)
 	{
 		for(i=0;i<10;i++){
-			for(j=0;j<5;j++){
+			for(j=0;j<1;j++){
 				Chip_I2D_Start(NSS_I2D);
-				Chip_PMU_PowerMode_EnterSleep();
+//				Chip_PMU_PowerMode_EnterSleep();
 				i2dNativeValue = Chip_I2D_GetValue(NSS_I2D);
-				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_1_1, I2D_CONVERTER_GAIN_LOW, 5)/100;
+				i2dTotalValue += Chip_I2D_NativeToPicoAmpere(i2dNativeValue, I2D_SCALER_GAIN_10_1, I2D_CONVERTER_GAIN_LOW, 5)/100;
 			}
 
 			//	 UART print to give out data
-			measurement[i] = i2dTotalValue/5;
+			measurement[i] = i2dTotalValue;
 			i2dTotalValue = 0;
 			UartTx_Printf("%d\r\n", measurement[i]);
 //			UartTx_DeInit();

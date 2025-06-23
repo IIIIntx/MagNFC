@@ -40,8 +40,8 @@ all:
 main-build: app_example_dp_ndeft2t.axf
 
 dependents:
-	-cd D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug && $(MAKE) all
-	-cd D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug && $(MAKE) all
+	-cd D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug && $(MAKE) clean all
+	-cd D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug && $(MAKE) clean all
 
 # Tool invocations
 app_example_dp_ndeft2t.axf: $(OBJS) $(USER_OBJS) D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_board_dp/Debug/liblib_board_dp.a D:/SchoolTasks/SCuMRobot/magNFC/release_mra2_12_6_nhs3152/sw/nss/lib_chip_nss/Debug/liblib_chip_nss.a makefile $(OPTIONAL_TOOL_DEPS)
