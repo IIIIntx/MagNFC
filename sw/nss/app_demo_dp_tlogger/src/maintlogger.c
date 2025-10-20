@@ -13,16 +13,25 @@
 #include <string.h>
 #include "board.h"
 #include "ndeft2t/ndeft2t.h"
+#if !SIMPLE_TEMP_STREAM
 #include "compress/compress.h"
 #include "storage/storage.h"
 #include "event/event.h"
 #include "event_tag.h"
+#endif
 #include "temperature.h"
+#if !SIMPLE_TEMP_STREAM
 #include "msghandler.h"
 #include "msghandler_protocol.h"
 #include "memory.h"
+#endif
 #include "timer.h"
+#if !SIMPLE_TEMP_STREAM
 #include "validate.h"
+#endif
+
+/* Enable a minimal mode to stream only temperature at max 1 Hz over NFC. */
+#define SIMPLE_TEMP_STREAM 1
 
 /* ------------------------------------------------------------------------- */
 
@@ -80,6 +89,7 @@
  *  functionality is (possibly) turned off in firmware.
  */
 
+#if !SIMPLE_TEMP_STREAM
 #if !(MEMORY_FIRSTUNUSEDEEPROMOFFSET < EVENT_EEPROM_FIRST_ROW*64)
     #error The SW memory map as defined through the default diversity settings and those overridden in app_sel.h is wrong. Fix it.
 #endif
@@ -89,6 +99,7 @@
 #endif
 #if !(ALON_WORD_SIZE <= STORAGE_FIRST_ALON_REGISTER)
     #error The SW memory map as defined through the default diversity settings and those overridden in app_sel.h is wrong. Fix it.
+#endif
 #endif
 
 /* ------------------------------------------------------------------------- */
@@ -147,8 +158,13 @@ static void InitApp(void);
 static void DeInit(const bool waitBeforeDisconnect);
 #endif
 static void DoPeriodicMeasurements(const bool usePlaceholder);
+#if SIMPLE_TEMP_STREAM
+static bool ExecuteSimple(void);
+static void PublishTemperature(void);
+#else
 static bool Execute(PMU_DPD_WAKEUPREASON_T wakeupReason);
 static void GenerateNextAutomaticCommand(void);
+#endif
 
 int main(void); /**< Application's main entry point. Declared here since it is referenced in ResetISR. */
 
@@ -322,6 +338,10 @@ static void Init(void)
  */
 static void InitApp(void)
 {
+    /* In simple stream mode, skip logger-specific initialization to save energy. */
+#if SIMPLE_TEMP_STREAM
+    (void)sResetAutomaticCommandGeneration;
+#else
     bool accepted = Memory_Init();
     AppMsgInit(accepted);
 
@@ -337,6 +357,7 @@ static void InitApp(void)
         NVIC_EnableIRQ(PIO0_0_IRQn); /* PIO0_0_IRQHandler is called when this interrupt fires. */
         Chip_SysCon_StartLogic_SetEnabledMask(SYSCON_STARTSOURCE_PIO0_0);
     }
+#endif
 #endif
 }
 
@@ -440,6 +461,7 @@ static void DeInit(const bool waitBeforeDisconnect)
  * #AppMsgHandleCommand.
  * @note The generation of new commands can be reset by setting #sResetAutomaticCommandGeneration to @c true.
  */
+#if !SIMPLE_TEMP_STREAM
 static void GenerateNextAutomaticCommand(void)
 {
     /* In order:
@@ -531,6 +553,7 @@ static void GenerateNextAutomaticCommand(void)
     }
     AppMsgHandleCommand(2 + paramLength, data);
 }
+#endif
 
 /**
  * Perform all actions required when one measurement is due.
@@ -625,6 +648,89 @@ static void DoPeriodicMeasurements(const bool usePlaceholder)
  * @return @c true when at least one message has been read or received (valid or not); @c false otherwise.
  * @note When the RTC down counter reaches zero, #DoPeriodicMeasurements is called.
  */
+#if SIMPLE_TEMP_STREAM
+
+static void PublishTemperature(void)
+{
+    /* Build and publish a minimal NDEF message containing only temperature.
+     * MIME type: "t"; Payload: 2 bytes signed little-endian raw temperature units.
+     */
+    __attribute__ ((section(".noinit"))) __attribute__((aligned (4)))
+    static uint8_t sInstance[NDEFT2T_INSTANCE_SIZE];
+    __attribute__ ((section(".noinit"))) __attribute__((aligned (4)))
+    static uint8_t sMessage[NFC_SHARED_MEM_BYTE_SIZE];
+
+    Temperature_Reset();
+    Temperature_Measure(TSEN_10BITS, false);
+    int temperatureDeciC = Temperature_Get(); /* deci-Celsius */
+    /* Convert deci-Celsius to centi-Celsius integer string: e.g., 25.3C -> 2503 */
+    int tempCenti = (temperatureDeciC >= 0) ? (temperatureDeciC * 10) / 10 : (temperatureDeciC * 10) / 10;
+    /* Format as ASCII without any extra info */
+    char ascii[8]; /* enough for -32768 -> 6 chars, but be safe */
+    int len = 0;
+    {
+        int value = tempCenti;
+        if (value == 0) {
+            ascii[0] = '0';
+            len = 1;
+        }
+        else {
+            if (value < 0) {
+                ascii[len++] = '-';
+                value = -value;
+            }
+            char rev[6];
+            int r = 0;
+            while (value > 0 && r < (int)sizeof(rev)) {
+                rev[r++] = (char)('0' + (value % 10));
+                value /= 10;
+            }
+            while (r > 0) {
+                ascii[len++] = rev[--r];
+            }
+        }
+    }
+
+    NDEFT2T_CREATE_RECORD_INFO_T recordInfo = { .shortRecord = true, .pString = (uint8_t *)"text/plain" };
+    NDEFT2T_CreateMessage(sInstance, sMessage, NFC_SHARED_MEM_BYTE_SIZE, true);
+    if (NDEFT2T_CreateMimeRecord(sInstance, &recordInfo)) {
+        if (NDEFT2T_WriteRecordPayload(sInstance, (uint8_t *)ascii, len)) {
+            NDEFT2T_CommitRecord(sInstance);
+        }
+    }
+    NDEFT2T_CommitMessage(sInstance);
+}
+
+static bool ExecuteSimple(void)
+{
+#ifndef DEBUG
+    Chip_WWDT_Feed();
+#endif
+    bool updated = false;
+    /* Immediately publish once and start 1s periodic timer. */
+    PublishTemperature();
+    Timer_StartMeasurementTimeout(1);
+    Timer_StartHostTimeout(HOST_TIMEOUT);
+
+    do {
+        if (Timer_CheckMeasurementTimeout()) {
+            PublishTemperature();
+            Timer_StartMeasurementTimeout(1);
+            updated = true;
+        }
+#ifndef DEBUG
+        if ((Chip_NFC_GetStatus(NSS_NFC) & NFC_STATUS_SEL) != 0) {
+            Chip_WWDT_Feed();
+        }
+#endif
+    }
+    while (!Timer_CheckHostTimeout());
+
+    return updated;
+}
+
+#else
+
 static bool Execute(PMU_DPD_WAKEUPREASON_T wakeupReason)
 {
     __attribute__ ((section(".noinit"))) __attribute__((aligned (4)))
@@ -701,11 +807,28 @@ static bool Execute(PMU_DPD_WAKEUPREASON_T wakeupReason)
     return messageRxTx;
 }
 
+#endif
+
 /* -------------------------------------------------------------------------------- */
 
 int main(void)
 {
-#ifdef APP_MAINTAIN_SWD_CONNECTION
+#if SIMPLE_TEMP_STREAM
+    /* Minimal continuous streaming mode with 1 Hz updates while field is present. */
+    Init();
+    for (;;) {
+        if (ExecuteSimple()) {
+            /* No-op */
+            ;
+        }
+        /* Enter Deep Power Down between NFC sessions to save energy. */
+        NDEFT2T_DeInit();
+        Chip_PMU_PowerMode_EnterDeepPowerDown(false);
+        /* Resume after wake (field or reset): re-init modules and continue. */
+        Board_Init();
+        NDEFT2T_Init();
+    }
+#elif defined(APP_MAINTAIN_SWD_CONNECTION)
     /* Avoid the use the Deep Power Down and Power-off low-power states and maintain a debugging connection over
      * SWD. Current consumption does not have focus here.
      */

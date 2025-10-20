@@ -1,0 +1,1738 @@
+Archive member included to satisfy reference by file (symbol)
+
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+                              ./src/maintlogger.o (Board_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o) (LED_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                              ./src/maintlogger.o (Chip_Clock_System_SetClockFreq)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o) (Chip_EEPROM_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o) (Chip_GPIO_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+                              ./mods/msg/msg.o (Chip_IAP_ReadUID)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o) (Chip_IOCON_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                              ./src/maintlogger.o (Chip_NFC_GetStatus)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+                              ./src/maintlogger.o (Chip_PMU_PowerMode_EnterDeepPowerDown)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o) (Chip_RTC_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o) (Chip_SysCon_Peripheral_AssertReset)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+                              ./src/timer.o (Chip_TIMER_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                              ./mods/tmeas/tmeas.o (Chip_TSen_Init)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+                              ./src/maintlogger.o (Chip_WWDT_Feed)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+                              ./src/maintlogger.o (Startup_VarInit)
+D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o) (Chip_BusSync_WriteReg)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+                              ./src/memory.o (memcpy)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+                              ./mods/ndeft2t/ndeft2t.o (memmove)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+                              ./src/maintlogger.o (memset)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+                              D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o) (__main)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+                              ./src/memory.o (memcmp)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+                              ./src/text.o (strcpy)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+                              ./mods/ndeft2t/ndeft2t.o (strlen)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+                              ./src/maintlogger.o (__aeabi_idiv)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+                              D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o) (__aeabi_idiv0)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+                              D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o) (__aeabi_memcpy)
+D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+                              ./mods/ndeft2t/ndeft2t.o (__gnu_thumb1_case_uqi)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .text          0x00000000        0x0 ./src/maintlogger.o
+ .data          0x00000000        0x0 ./src/maintlogger.o
+ .bss           0x00000000        0x0 ./src/maintlogger.o
+ .text.App_CompressCb
+                0x00000000       0x3c ./src/maintlogger.o
+ .text.App_DecompressCb
+                0x00000000       0x38 ./src/maintlogger.o
+ .text          0x00000000        0x0 ./src/memory.o
+ .data          0x00000000        0x0 ./src/memory.o
+ .bss           0x00000000        0x0 ./src/memory.o
+ .text.App_EventCb
+                0x00000000       0x16 ./src/memory.o
+ .text.Memory_DeInit
+                0x00000000       0x54 ./src/memory.o
+ .text.Memory_GetConfig
+                0x00000000        0x8 ./src/memory.o
+ .text.Memory_IsMonitoring
+                0x00000000       0x1c ./src/memory.o
+ .text.Memory_IsFull
+                0x00000000       0x10 ./src/memory.o
+ .text.Memory_BodOccurred
+                0x00000000       0x10 ./src/memory.o
+ .text.Memory_SetAttainedValue
+                0x00000000       0x1c ./src/memory.o
+ .text.Memory_ResetConfig
+                0x00000000       0x44 ./src/memory.o
+ .text.Memory_Init
+                0x00000000       0xa8 ./src/memory.o
+ .text.Memory_RemoveFromState
+                0x00000000       0x10 ./src/memory.o
+ .data.sArmBuildTimestamp
+                0x00000000        0x4 ./src/memory.o
+ .text          0x00000000        0x0 ./src/msghandler.o
+ .data          0x00000000        0x0 ./src/msghandler.o
+ .bss           0x00000000        0x0 ./src/msghandler.o
+ .text.EventCb_GetEventsResponse
+                0x00000000      0x160 ./src/msghandler.o
+ .text.StartHandler
+                0x00000000       0x34 ./src/msghandler.o
+ .text.GetConfigHandler
+                0x00000000       0x8c ./src/msghandler.o
+ .text.GetEventsHandler
+                0x00000000       0x84 ./src/msghandler.o
+ .text.MeasureTemperatureHandler
+                0x00000000       0x34 ./src/msghandler.o
+ .text.SetConfigHandler
+                0x00000000       0xb8 ./src/msghandler.o
+ .rodata.ResponseCb.str1.1
+                0x00000000        0x4 ./src/msghandler.o
+ .text.ResponseCb
+                0x00000000      0x184 ./src/msghandler.o
+ .text.GetMeasurementsHandler
+                0x00000000       0x64 ./src/msghandler.o
+ .text.GetPeriodicDataHandler
+                0x00000000       0x68 ./src/msghandler.o
+ .text.CommandAcceptCb
+                0x00000000       0x14 ./src/msghandler.o
+ .text.AppMsgInit
+                0x00000000       0x30 ./src/msghandler.o
+ .text.AppMsgHandleCommand
+                0x00000000       0x14 ./src/msghandler.o
+ .text.AppMsgHandlerSendMeasureTemperatureResponse
+                0x00000000       0x24 ./src/msghandler.o
+ .data.sLocale.0
+                0x00000000        0x3 ./src/msghandler.o
+ .bss.sOffsetInResponse.1
+                0x00000000        0x2 ./src/msghandler.o
+ .bss.sCallCount.2
+                0x00000000        0x4 ./src/msghandler.o
+ .bss.sData.3   0x00000000        0x4 ./src/msghandler.o
+ .noinit        0x00000000      0x423 ./src/msghandler.o
+ .data.App_CmdHandler
+                0x00000000       0x38 ./src/msghandler.o
+ .bss.sAcceptResponse
+                0x00000000        0x1 ./src/msghandler.o
+ .data.sMime    0x00000000       0x12 ./src/msghandler.o
+ .debug_info    0x00000000     0x271c ./src/msghandler.o
+ .debug_abbrev  0x00000000      0x569 ./src/msghandler.o
+ .debug_loc     0x00000000     0x111a ./src/msghandler.o
+ .debug_aranges
+                0x00000000       0x80 ./src/msghandler.o
+ .debug_ranges  0x00000000      0x140 ./src/msghandler.o
+ .debug_line    0x00000000      0xdd7 ./src/msghandler.o
+ .debug_str     0x00000000     0x1b80 ./src/msghandler.o
+ .comment       0x00000000       0x45 ./src/msghandler.o
+ .debug_frame   0x00000000      0x190 ./src/msghandler.o
+ .ARM.attributes
+                0x00000000       0x2c ./src/msghandler.o
+ .text          0x00000000        0x0 ./src/temperature.o
+ .data          0x00000000        0x0 ./src/temperature.o
+ .bss           0x00000000        0x0 ./src/temperature.o
+ .text          0x00000000        0x0 ./src/text.o
+ .data          0x00000000        0x0 ./src/text.o
+ .bss           0x00000000        0x0 ./src/text.o
+ .text.Number2String
+                0x00000000       0x46 ./src/text.o
+ .text.DeciValue2String
+                0x00000000       0x46 ./src/text.o
+ .text.Duration2String.constprop.0
+                0x00000000       0x84 ./src/text.o
+ .text.Text_GetStatus
+                0x00000000       0xac ./src/text.o
+ .text.Text_GetFailures
+                0x00000000       0xb4 ./src/text.o
+ .rodata.Text_GetTemperature.str1.1
+                0x00000000       0x58 ./src/text.o
+ .text.Text_GetTemperature
+                0x00000000       0x74 ./src/text.o
+ .rodata.sDays.0
+                0x00000000        0x5 ./src/text.o
+ .rodata.sHours.1
+                0x00000000        0x6 ./src/text.o
+ .rodata.sMinutes.2
+                0x00000000        0x8 ./src/text.o
+ .rodata.sSeconds.3
+                0x00000000        0x8 ./src/text.o
+ .noinit        0x00000000      0x1ab ./src/text.o
+ .rodata.str1.1
+                0x00000000      0x1b4 ./src/text.o
+ .rodata.sEventStrings
+                0x00000000       0x5c ./src/text.o
+ .debug_info    0x00000000      0xbd0 ./src/text.o
+ .debug_abbrev  0x00000000      0x2a3 ./src/text.o
+ .debug_loc     0x00000000      0x628 ./src/text.o
+ .debug_aranges
+                0x00000000       0x48 ./src/text.o
+ .debug_ranges  0x00000000       0x68 ./src/text.o
+ .debug_line    0x00000000      0x6f6 ./src/text.o
+ .debug_str     0x00000000      0x7de ./src/text.o
+ .comment       0x00000000       0x45 ./src/text.o
+ .debug_frame   0x00000000       0xd4 ./src/text.o
+ .ARM.attributes
+                0x00000000       0x2c ./src/text.o
+ .text          0x00000000        0x0 ./src/timer.o
+ .data          0x00000000        0x0 ./src/timer.o
+ .bss           0x00000000        0x0 ./src/timer.o
+ .text.Timer_StopMeasurementTimeout
+                0x00000000       0x30 ./src/timer.o
+ .text.Timer_StartFreeRunning
+                0x00000000       0x24 ./src/timer.o
+ .text.Timer_StopFreeRunning
+                0x00000000       0x10 ./src/timer.o
+ .text.Timer_GetFreeRunning
+                0x00000000        0xc ./src/timer.o
+ .text          0x00000000        0x0 ./src/validate.o
+ .data          0x00000000        0x0 ./src/validate.o
+ .bss           0x00000000        0x0 ./src/validate.o
+ .text.Validate_Init
+                0x00000000        0xc ./src/validate.o
+ .text.Validate_DeInit
+                0x00000000        0x2 ./src/validate.o
+ .text.Validate_Reset
+                0x00000000       0x18 ./src/validate.o
+ .text.Validate_Temperature
+                0x00000000       0xb8 ./src/validate.o
+ .bss.spValidate
+                0x00000000        0x4 ./src/validate.o
+ .text          0x00000000        0x0 ./mods/tmeas/tmeas.o
+ .data          0x00000000        0x0 ./mods/tmeas/tmeas.o
+ .bss           0x00000000        0x0 ./mods/tmeas/tmeas.o
+ .text          0x00000000        0x0 ./mods/storage/storage.o
+ .data          0x00000000        0x0 ./mods/storage/storage.o
+ .bss           0x00000000        0x0 ./mods/storage/storage.o
+ .text.ResetInstance
+                0x00000000       0x1c ./mods/storage/storage.o
+ .text.ShiftAlignedData
+                0x00000000       0x50 ./mods/storage/storage.o
+ .text.ShiftUnalignedData
+                0x00000000       0x5a ./mods/storage/storage.o
+ .text.CacheSample
+                0x00000000       0x50 ./mods/storage/storage.o
+ .text.GetCachedSample
+                0x00000000       0x5c ./mods/storage/storage.o
+ .text.GetFlashCount
+                0x00000000       0x34 ./mods/storage/storage.o
+ .text.WriteHint
+                0x00000000       0x70 ./mods/storage/storage.o
+ .text.ReadFromEeprom
+                0x00000000       0x44 ./mods/storage/storage.o
+ .text.WriteToEeprom
+                0x00000000       0x6c ./mods/storage/storage.o
+ .text.WriteMarker
+                0x00000000       0x2c ./mods/storage/storage.o
+ .text.ReadAndCacheSamplesFromFlash
+                0x00000000       0x70 ./mods/storage/storage.o
+ .text.ValidateHint
+                0x00000000       0x94 ./mods/storage/storage.o
+ .text.ValidateMarker
+                0x00000000       0x54 ./mods/storage/storage.o
+ .text.Storage_DummyCompressCb
+                0x00000000        0x4 ./mods/storage/storage.o
+ .text.Storage_DummyDecompressCb
+                0x00000000        0x4 ./mods/storage/storage.o
+ .text.Storage_Init
+                0x00000000      0x25c ./mods/storage/storage.o
+ .text.Storage_DeInit
+                0x00000000       0x98 ./mods/storage/storage.o
+ .text.Storage_GetCount
+                0x00000000       0x28 ./mods/storage/storage.o
+ .text.Storage_Reset
+                0x00000000       0xbc ./mods/storage/storage.o
+ .text.Storage_Write
+                0x00000000      0x288 ./mods/storage/storage.o
+ .text.Storage_Seek
+                0x00000000       0xb0 ./mods/storage/storage.o
+ .text.Storage_Read
+                0x00000000      0x148 ./mods/storage/storage.o
+ .noinit        0x00000000      0x4ac ./mods/storage/storage.o
+ .bss.sEepromBitCursorChanged
+                0x00000000        0x1 ./mods/storage/storage.o
+ .bss.checkSizeOfRecoverInfo
+                0x00000000        0x4 ./mods/storage/storage.o
+ .bss.checkSizeOfMarker
+                0x00000000        0x4 ./mods/storage/storage.o
+ .bss.checkSizeOfHint
+                0x00000000        0x4 ./mods/storage/storage.o
+ .bss.checkSizeOfSampleType
+                0x00000000        0x4 ./mods/storage/storage.o
+ .debug_info    0x00000000     0x213a ./mods/storage/storage.o
+ .debug_abbrev  0x00000000      0x4d7 ./mods/storage/storage.o
+ .debug_loc     0x00000000     0x1a14 ./mods/storage/storage.o
+ .debug_aranges
+                0x00000000       0xc8 ./mods/storage/storage.o
+ .debug_ranges  0x00000000      0x308 ./mods/storage/storage.o
+ .debug_line    0x00000000     0x14f8 ./mods/storage/storage.o
+ .debug_str     0x00000000      0xce3 ./mods/storage/storage.o
+ .comment       0x00000000       0x45 ./mods/storage/storage.o
+ .debug_frame   0x00000000      0x288 ./mods/storage/storage.o
+ .ARM.attributes
+                0x00000000       0x2c ./mods/storage/storage.o
+ .text          0x00000000        0x0 ./mods/ndeft2t/ndeft2t.o
+ .data          0x00000000        0x0 ./mods/ndeft2t/ndeft2t.o
+ .bss           0x00000000        0x0 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_DisableMessageReadDetection
+                0x00000000        0x8 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_CreateTextRecord
+                0x00000000       0x12 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_CreateExtRecord
+                0x00000000       0x14 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_CreateUriRecord
+                0x00000000       0x14 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_GetNextRecord
+                0x00000000      0x112 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_GetMessage
+                0x00000000       0x60 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_GetRecordPayload
+                0x00000000       0x12 ./mods/ndeft2t/ndeft2t.o
+ .bss.checkSizeOfNdeft2tInstance
+                0x00000000        0x4 ./mods/ndeft2t/ndeft2t.o
+ .text          0x00000000        0x0 ./mods/msg/msg.o
+ .data          0x00000000        0x0 ./mods/msg/msg.o
+ .bss           0x00000000        0x0 ./mods/msg/msg.o
+ .text.DispatchCommand
+                0x00000000       0x28 ./mods/msg/msg.o
+ .text.Msg_Init
+                0x00000000       0x24 ./mods/msg/msg.o
+ .text.Msg_SetResponseCb
+                0x00000000        0xc ./mods/msg/msg.o
+ .text.GetCalibrationTimestampHandler
+                0x00000000       0x44 ./mods/msg/msg.o
+ .text.CheckBatteryHandler
+                0x00000000       0x32 ./mods/msg/msg.o
+ .text.GetNfcUidHandler
+                0x00000000       0x28 ./mods/msg/msg.o
+ .text.GetUidHandler
+                0x00000000       0x1a ./mods/msg/msg.o
+ .text.GetVersionHandler
+                0x00000000       0x40 ./mods/msg/msg.o
+ .text.GetResponseHandler
+                0x00000000       0x5c ./mods/msg/msg.o
+ .text.Msg_HandleCommand
+                0x00000000       0x6c ./mods/msg/msg.o
+ .data.sCmdHandler
+                0x00000000       0x30 ./mods/msg/msg.o
+ .text          0x00000000        0x0 ./mods/event/event.o
+ .data          0x00000000        0x0 ./mods/event/event.o
+ .bss           0x00000000        0x0 ./mods/event/event.o
+ .text.GetFirstOrLastByTag
+                0x00000000       0xb0 ./mods/event/event.o
+ .text.Event_Init
+                0x00000000       0xa0 ./mods/event/event.o
+ .text.Event_DeInit
+                0x00000000       0x74 ./mods/event/event.o
+ .text.Event_SetCb
+                0x00000000       0x18 ./mods/event/event.o
+ .text.Event_GetByIndex
+                0x00000000       0xd0 ./mods/event/event.o
+ .text.Event_GetByTime
+                0x00000000       0xc0 ./mods/event/event.o
+ .text.Event_GetByTag
+                0x00000000       0xc4 ./mods/event/event.o
+ .text.Event_GetFirstByTag
+                0x00000000       0x16 ./mods/event/event.o
+ .text.Event_GetLastByTag
+                0x00000000       0x16 ./mods/event/event.o
+ .data.sEventCb
+                0x00000000        0x4 ./mods/event/event.o
+ .text          0x00000000        0x0 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .data          0x00000000        0x0 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .bss           0x00000000        0x0 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .text.get_bits
+                0x00000000       0x70 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .text.heatshrink_decoder_reset
+                0x00000000       0x22 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .text.heatshrink_decoder_sink
+                0x00000000       0x44 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .text.heatshrink_decoder_poll
+                0x00000000      0x160 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .text.heatshrink_decoder_finish
+                0x00000000       0x1c ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_info    0x00000000      0xa0c ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_abbrev  0x00000000      0x337 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_loc     0x00000000      0x7f2 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_aranges
+                0x00000000       0x40 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_ranges  0x00000000       0x98 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_line    0x00000000      0x6c8 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_str     0x00000000      0x5f6 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .comment       0x00000000       0x45 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_frame   0x00000000       0x94 ./mods/compress/heatshrink/heatshrink_decoder.o
+ .ARM.attributes
+                0x00000000       0x2c ./mods/compress/heatshrink/heatshrink_decoder.o
+ .text          0x00000000        0x0 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .data          0x00000000        0x0 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .bss           0x00000000        0x0 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text.push_bits
+                0x00000000       0x52 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text.push_outgoing_bits
+                0x00000000       0x30 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text.heatshrink_encoder_reset
+                0x00000000       0x24 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text.heatshrink_encoder_sink
+                0x00000000       0x66 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text.heatshrink_encoder_poll
+                0x00000000      0x238 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text.heatshrink_encoder_finish
+                0x00000000       0x26 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_info    0x00000000      0xfdb ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_abbrev  0x00000000      0x392 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_loc     0x00000000      0xeba ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_aranges
+                0x00000000       0x48 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_ranges  0x00000000      0x118 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_line    0x00000000      0x974 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_str     0x00000000      0x76e ./mods/compress/heatshrink/heatshrink_encoder.o
+ .comment       0x00000000       0x45 ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_frame   0x00000000       0xbc ./mods/compress/heatshrink/heatshrink_encoder.o
+ .ARM.attributes
+                0x00000000       0x2c ./mods/compress/heatshrink/heatshrink_encoder.o
+ .text          0x00000000        0x0 ./mods/compress/compress.o
+ .data          0x00000000        0x0 ./mods/compress/compress.o
+ .bss           0x00000000        0x0 ./mods/compress/compress.o
+ .text.Compress_Encode
+                0x00000000       0xa8 ./mods/compress/compress.o
+ .text.Compress_Decode
+                0x00000000       0xb0 ./mods/compress/compress.o
+ .debug_info    0x00000000      0x6ea ./mods/compress/compress.o
+ .debug_abbrev  0x00000000      0x175 ./mods/compress/compress.o
+ .debug_loc     0x00000000      0x325 ./mods/compress/compress.o
+ .debug_aranges
+                0x00000000       0x28 ./mods/compress/compress.o
+ .debug_ranges  0x00000000       0x18 ./mods/compress/compress.o
+ .debug_line    0x00000000      0x43f ./mods/compress/compress.o
+ .debug_str     0x00000000      0x653 ./mods/compress/compress.o
+ .comment       0x00000000       0x45 ./mods/compress/compress.o
+ .debug_frame   0x00000000       0x58 ./mods/compress/compress.o
+ .ARM.attributes
+                0x00000000       0x2c ./mods/compress/compress.o
+ .text          0x00000000        0x0 ./mods/batimp/batimp.o
+ .data          0x00000000        0x0 ./mods/batimp/batimp.o
+ .bss           0x00000000        0x0 ./mods/batimp/batimp.o
+ .text.SetLevel
+                0x00000000       0x48 ./mods/batimp/batimp.o
+ .text.BatImp_Check
+                0x00000000       0xd4 ./mods/batimp/batimp.o
+ .rodata.iq.0   0x00000000       0x10 ./mods/batimp/batimp.o
+ .rodata.sLevels
+                0x00000000        0xa ./mods/batimp/batimp.o
+ .debug_info    0x00000000      0x7cf ./mods/batimp/batimp.o
+ .debug_abbrev  0x00000000      0x2c9 ./mods/batimp/batimp.o
+ .debug_loc     0x00000000      0x24a ./mods/batimp/batimp.o
+ .debug_aranges
+                0x00000000       0x28 ./mods/batimp/batimp.o
+ .debug_ranges  0x00000000       0x98 ./mods/batimp/batimp.o
+ .debug_line    0x00000000      0x32f ./mods/batimp/batimp.o
+ .debug_str     0x00000000      0x5a5 ./mods/batimp/batimp.o
+ .comment       0x00000000       0x45 ./mods/batimp/batimp.o
+ .debug_frame   0x00000000       0x48 ./mods/batimp/batimp.o
+ .ARM.attributes
+                0x00000000       0x2c ./mods/batimp/batimp.o
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .text.LED_GetState
+                0x00000000       0x1a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .text.LED_On   0x00000000        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .text.LED_Toggle
+                0x00000000       0x12 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_System_BusyWait_ms
+                0x00000000       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_SPI0_SetClockDiv
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_SPI0_GetClockDiv
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_SPI0_SetClockFreq
+                0x00000000       0x24 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_SPI0_GetClockFreq
+                0x00000000       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Watchdog_GetClockDiv
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Watchdog_SetClockFreq
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Watchdog_GetClockFreq
+                0x00000000       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Peripheral_SetClockEnabled
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Peripheral_GetClockEnabled
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Watchdog_GetClockSource
+                0x00000000       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Clkout_SetClockSource
+                0x00000000       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_Clkout_GetClockSource
+                0x00000000       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text.Chip_EEPROM_DeInit
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text.Chip_EEPROM_Flush
+                0x00000000        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text.Chip_EEPROM_Read
+                0x00000000       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text.Chip_EEPROM_Memset
+                0x00000000       0x16 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .text.Chip_GPIO_DeInit
+                0x00000000        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .text.Chip_GPIO_SetPinDIR
+                0x00000000       0x1e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .text.Chip_GPIO_SetPortDIR
+                0x00000000       0x1a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .text.Chip_GPIO_SetupPinInt
+                0x00000000       0x4c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_ReadFactorySettings
+                0x00000000       0x40 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_ReadPartID
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_ReadBootVersion
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_ReadUID
+                0x00000000       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_Flash_PrepareSector
+                0x00000000       0x24 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_Flash_EraseSector
+                0x00000000       0x24 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_Flash_ErasePage
+                0x00000000       0x24 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_Flash_Program
+                0x00000000       0x28 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_Flash_SectorBlankCheck
+                0x00000000       0x48 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text.Chip_IAP_Compare
+                0x00000000       0x34 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_info    0x00000000      0x99d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_abbrev  0x00000000      0x1fe D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_loc     0x00000000      0x518 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_aranges
+                0x00000000       0x68 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_ranges  0x00000000       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_line    0x00000000      0x4c5 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_str     0x00000000      0x826 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .comment       0x00000000       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_frame   0x00000000      0x14c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .ARM.attributes
+                0x00000000       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .text.Chip_IOCON_DeInit
+                0x00000000        0xc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .text.Chip_IOCON_GetPinConfig
+                0x00000000        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .text.Chip_IOCON_SetAnabusGrounded
+                0x00000000        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .text.Chip_IOCON_GetAnabusGrounded
+                0x00000000        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .text.Chip_IOCON_GroundAnabus
+                0x00000000        0xe D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .text.Chip_NFC_DeInit
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .text.Chip_NFC_GetTargetAddress
+                0x00000000        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .text.Chip_NFC_GetLastAccessInfo
+                0x00000000       0x1e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .text.Chip_NFC_WordWrite
+                0x00000000       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .text.Chip_NFC_ByteRead
+                0x00000000       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_PowerMode_EnterSleep
+                0x00000000       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_PowerMode_EnterDeepSleep
+                0x00000000       0x1a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_PowerMode_GetDPDWakeupReason
+                0x00000000       0x40 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Switch_GetVDDBat
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Switch_GetVNFC
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Switch_OpenVDDBat
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_SetBODEnabled
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_GetBODEnabled
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_SetWakeupPinEnabled
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_GetWakeupPinEnabled
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_SetRTCClockSource
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_GetRTCClockSource
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_SetRetainedData
+                0x00000000       0x34 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_GetRetainedData
+                0x00000000       0x34 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_GetStatus
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Int_SetEnabledMask
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Int_GetEnabledMask
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Int_GetRawStatus
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_Int_ClearRawStatus
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_SetAutoPowerEnabled
+                0x00000000       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_GetAutoPowerEnabled
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_DeInit
+                0x00000000       0x34 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_SetCalibration
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_GetCalibration
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_Wakeup_GetControl
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_Wakeup_GetReload
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_Wakeup_GetRemaining
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_Wakeup_IsRunning
+                0x00000000       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_Time_SetValue
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text.Chip_RTC_Int_GetEnabledMask
+                0x00000000       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_IVT_SetAddress
+                0x00000000       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_IVT_GetAddress
+                0x00000000       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_Peripheral_SetPowerDisabled
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_Peripheral_GetPowerDisabled
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_Reset_GetSource
+                0x00000000       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_Reset_ClearSource
+                0x00000000        0xc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_StartLogic_GetEnabledMask
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_StartLogic_GetStatus
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_StartLogic_SetPIORisingEdge
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_StartLogic_GetPIORisingEdge
+                0x00000000       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text.Chip_SysCon_GetDeviceID
+                0x00000000       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .text.Chip_TIMER_DeInit
+                0x00000000        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .text.Chip_TIMER_ExtMatchControlSet
+                0x00000000       0x22 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .text.Chip_TIMER_SetMatchOutputMode
+                0x00000000       0x1a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .text.Chip_TIMER_GetMatchOutputMode
+                0x00000000       0x12 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_NativeToKelvin
+                0x00000000       0x1a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_KelvinToNative
+                0x00000000       0x1a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_CelsiusToNative
+                0x00000000       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_NativeToFahrenheit
+                0x00000000       0x54 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_FahrenheitToNative
+                0x00000000       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_SetThresholdLow
+                0x00000000        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_GetThresholdLow
+                0x00000000        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_SetThresholdHigh
+                0x00000000        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_GetThresholdHigh
+                0x00000000        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_GetEnabledMask
+                0x00000000        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_GetRawStatus
+                0x00000000        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text.Chip_TSen_Int_ClearRawStatus
+                0x00000000        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .text          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .data          0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .bss           0x00000000        0x0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .text.memcmp   0x00000000       0x38 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_info    0x00000000      0x111 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_abbrev  0x00000000       0x9b D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_loc     0x00000000      0x1e6 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_aranges
+                0x00000000       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_ranges  0x00000000       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_line    0x00000000      0x10e D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_str     0x00000000      0x160 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .comment       0x00000000       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_frame   0x00000000       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .ARM.attributes
+                0x00000000       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .text.strcpy   0x00000000       0x44 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_info    0x00000000       0xdc D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_abbrev  0x00000000       0xa7 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_loc     0x00000000      0x10c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_aranges
+                0x00000000       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_ranges  0x00000000       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_line    0x00000000       0xba D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_str     0x00000000      0x15d D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .comment       0x00000000       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_frame   0x00000000       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .ARM.attributes
+                0x00000000       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memclr
+                0x00000000        0x6 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memset
+                0x00000000        0x8 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+ .text          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .data          0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .bss           0x00000000        0x0 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .text.__gnu_thumb1_case_sqi
+                0x00000000       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .text.__gnu_thumb1_case_uqi
+                0x00000000       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .text.__gnu_thumb1_case_shi
+                0x00000000       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .text.__gnu_thumb1_case_uhi
+                0x00000000       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .text.__gnu_thumb1_case_si
+                0x00000000       0x18 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+ .ARM.attributes
+                0x00000000       0x1c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(thumb1_switch_helpers.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+Flash30          0x00000000         0x00007800         xr
+SRAM8            0x10000000         0x00001ff0         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/crp.o
+LOAD ./src/maintlogger.o
+LOAD ./src/memory.o
+LOAD ./src/msghandler.o
+LOAD ./src/temperature.o
+LOAD ./src/text.o
+LOAD ./src/timer.o
+LOAD ./src/validate.o
+LOAD ./mods/tmeas/tmeas.o
+LOAD ./mods/storage/storage.o
+LOAD ./mods/ndeft2t/ndeft2t.o
+LOAD ./mods/msg/msg.o
+LOAD ./mods/event/event.o
+LOAD ./mods/compress/heatshrink/heatshrink_decoder.o
+LOAD ./mods/compress/heatshrink/heatshrink_encoder.o
+LOAD ./mods/compress/compress.o
+LOAD ./mods/batimp/batimp.o
+LOAD D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a
+LOAD D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a
+START GROUP
+LOAD D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a
+LOAD D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a
+LOAD D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libgcc.a
+END GROUP
+                0x00000000                        __base_Flash30 = 0x0
+                0x00000000                        __base_Flash = 0x0
+                0x00007800                        __top_Flash30 = 0x7800
+                0x00007800                        __top_Flash = 0x7800
+                0x10000000                        __base_SRAM8 = 0x10000000
+                0x10000000                        __base_RAM = 0x10000000
+                0x10001ff0                        __top_SRAM8 = 0x10001ff0
+                0x10001ff0                        __top_RAM = 0x10001ff0
+
+.text           0x00000000     0x16c8
+ FILL mask 0xff
+                0x00000000                        __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+                0x00000000                g_pfnVectors
+                0x000000c0                        . = ALIGN (0x4)
+                0x000000c0                        __section_table_start = .
+                0x000000c0                        __data_section_table = .
+                0x000000c0        0x4 LONG 0x16cc LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000c8        0x4 LONG 0x4 SIZEOF (.data)
+                0x000000cc                        __data_section_table_end = .
+                0x000000cc                        __bss_section_table = .
+                0x000000cc        0x4 LONG 0x10000004 ADDR (.bss)
+                0x000000d0        0x4 LONG 0x44 SIZEOF (.bss)
+                0x000000d4                        __bss_section_table_end = .
+                0x000000d4                        __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000d4       0x78 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+                0x000000d4                Startup_VarInit
+ *(.text*)
+ .text.PublishTemperature
+                0x0000014c       0xd0 ./src/maintlogger.o
+ .text.PIO0_0_IRQHandler
+                0x0000021c       0x20 ./src/maintlogger.o
+                0x0000021c                PIO0_0_IRQHandler
+ .text.App_FieldStatusCb
+                0x0000023c       0x12 ./src/maintlogger.o
+                0x0000023c                App_FieldStatusCb
+ *fill*         0x0000024e        0x2 ff
+ .text.App_MsgAvailableCb
+                0x00000250       0x14 ./src/maintlogger.o
+                0x00000250                App_MsgAvailableCb
+ .text.App_MsgReadCb
+                0x00000264       0x14 ./src/maintlogger.o
+                0x00000264                App_MsgReadCb
+ .text.startup.main
+                0x00000278       0x68 ./src/maintlogger.o
+                0x00000278                main
+ .text.ResetISR
+                0x000002e0       0x28 ./src/maintlogger.o
+                0x000002e0                ResetISR
+ .text.Memory_IsReadyToStart
+                0x00000308       0x18 ./src/memory.o
+                0x00000308                Memory_IsReadyToStart
+ .text.Memory_AddToState
+                0x00000320       0x64 ./src/memory.o
+                0x00000320                Memory_AddToState
+ .text.App_TmeasCb
+                0x00000384       0x4c ./src/temperature.o
+                0x00000384                App_TmeasCb
+ .text.Temperature_Reset
+                0x000003d0       0x10 ./src/temperature.o
+                0x000003d0                Temperature_Reset
+ .text.Temperature_Measure
+                0x000003e0        0xe ./src/temperature.o
+                0x000003e0                Temperature_Measure
+ *fill*         0x000003ee        0x2 ff
+ .text.Temperature_Get
+                0x000003f0       0x20 ./src/temperature.o
+                0x000003f0                Temperature_Get
+ .text.RTC_IRQHandler
+                0x00000410       0x30 ./src/timer.o
+                0x00000410                RTC_IRQHandler
+ .text.Timer_Init
+                0x00000440       0x1c ./src/timer.o
+                0x00000440                Timer_Init
+ .text.Timer_StartMeasurementTimeout
+                0x0000045c       0x54 ./src/timer.o
+                0x0000045c                Timer_StartMeasurementTimeout
+ .text.Timer_CheckMeasurementTimeout
+                0x000004b0        0xc ./src/timer.o
+                0x000004b0                Timer_CheckMeasurementTimeout
+ .text.Timer_StopHostTimeout
+                0x000004bc       0x30 ./src/timer.o
+                0x000004bc                Timer_StopHostTimeout
+ .text.CT16B0_IRQHandler
+                0x000004ec       0x20 ./src/timer.o
+                0x000004ec                CT16B0_IRQHandler
+ .text.Timer_StartHostTimeout
+                0x0000050c       0x50 ./src/timer.o
+                0x0000050c                Timer_StartHostTimeout
+ .text.Timer_CheckHostTimeout
+                0x0000055c        0xc ./src/timer.o
+                0x0000055c                Timer_CheckHostTimeout
+ .text.Validate_NewEvents
+                0x00000568        0x2 ./src/validate.o
+                0x00000568                Validate_NewEvents
+ *fill*         0x0000056a        0x2 ff
+ .text.TSEN_IRQHandler
+                0x0000056c       0x74 ./mods/tmeas/tmeas.o
+                0x0000056c                TSEN_IRQHandler
+ .text.TMeas_Measure
+                0x000005e0       0xc0 ./mods/tmeas/tmeas.o
+                0x000005e0                TMeas_Measure
+ .text.DecodeNdefTlv
+                0x000006a0       0x50 ./mods/ndeft2t/ndeft2t.o
+ .text.DisableMessageReadDetection
+                0x000006f0       0x30 ./mods/ndeft2t/ndeft2t.o
+ .text.CreateRecord
+                0x00000720       0xb8 ./mods/ndeft2t/ndeft2t.o
+ .text.DisableTermTlvDetection
+                0x000007d8       0x28 ./mods/ndeft2t/ndeft2t.o
+ .text.NDEFT2T_DeInit
+                0x00000800       0x1c ./mods/ndeft2t/ndeft2t.o
+                0x00000800                NDEFT2T_DeInit
+ .text.NDEFT2T_ResetNfcMemory
+                0x0000081c       0x18 ./mods/ndeft2t/ndeft2t.o
+                0x0000081c                NDEFT2T_ResetNfcMemory
+ .text.NDEFT2T_Init
+                0x00000834       0x34 ./mods/ndeft2t/ndeft2t.o
+                0x00000834                NDEFT2T_Init
+ .text.NDEFT2T_EnableMessageReadDetection
+                0x00000868       0x40 ./mods/ndeft2t/ndeft2t.o
+                0x00000868                NDEFT2T_EnableMessageReadDetection
+ .text.NDEFT2T_CreateMessage
+                0x000008a8       0x38 ./mods/ndeft2t/ndeft2t.o
+                0x000008a8                NDEFT2T_CreateMessage
+ .text.NDEFT2T_CreateMimeRecord
+                0x000008e0       0x14 ./mods/ndeft2t/ndeft2t.o
+                0x000008e0                NDEFT2T_CreateMimeRecord
+ .text.NDEFT2T_WriteRecordPayload
+                0x000008f4       0x40 ./mods/ndeft2t/ndeft2t.o
+                0x000008f4                NDEFT2T_WriteRecordPayload
+ .text.NDEFT2T_CommitRecord
+                0x00000934       0x26 ./mods/ndeft2t/ndeft2t.o
+                0x00000934                NDEFT2T_CommitRecord
+ *fill*         0x0000095a        0x2 ff
+ .text.NDEFT2T_CommitMessage
+                0x0000095c      0x12c ./mods/ndeft2t/ndeft2t.o
+                0x0000095c                NDEFT2T_CommitMessage
+ .text.NFC_IRQHandler
+                0x00000a88      0x138 ./mods/ndeft2t/ndeft2t.o
+                0x00000a88                NFC_IRQHandler
+ .text.Msg_AddResponse
+                0x00000bc0       0xf8 ./mods/msg/msg.o
+                0x00000bc0                Msg_AddResponse
+ .text.Event_Set
+                0x00000cb8       0xd4 ./mods/event/event.o
+                0x00000cb8                Event_Set
+ .text.Board_Init
+                0x00000d8c       0xdc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+                0x00000d8c                Board_Init
+ .text.LED_SetState
+                0x00000e68       0x16 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+                0x00000e68                LED_SetState
+ .text.LED_Off  0x00000e7e        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+                0x00000e7e                LED_Off
+ .text.LED_Init
+                0x00000e88       0x28 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+                0x00000e88                LED_Init
+ .text.Chip_Clock_System_SetClockDiv
+                0x00000eb0       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000eb0                Chip_Clock_System_SetClockDiv
+ .text.Chip_Clock_System_GetClockDiv
+                0x00000ee0       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000ee0                Chip_Clock_System_GetClockDiv
+ .text.Chip_Clock_System_SetClockFreq
+                0x00000ef4       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000ef4                Chip_Clock_System_SetClockFreq
+ .text.Chip_Clock_System_GetClockFreq
+                0x00000f08       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000f08                Chip_Clock_System_GetClockFreq
+ .text.Chip_Clock_System_BusyWait_us.part.0
+                0x00000f1c       0x34 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .text.Chip_Clock_System_BusyWait_us
+                0x00000f50        0xc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000f50                Chip_Clock_System_BusyWait_us
+ .text.Chip_Clock_Watchdog_SetClockDiv
+                0x00000f5c       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000f5c                Chip_Clock_Watchdog_SetClockDiv
+ .text.Chip_Clock_Peripheral_EnableClock
+                0x00000f88       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000f88                Chip_Clock_Peripheral_EnableClock
+ .text.Chip_Clock_Peripheral_DisableClock
+                0x00000fa0       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000fa0                Chip_Clock_Peripheral_DisableClock
+ .text.Chip_Clock_Watchdog_SetClockSource
+                0x00000fb8       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+                0x00000fb8                Chip_Clock_Watchdog_SetClockSource
+ .text.CommitAndFlush
+                0x00000fd8       0x50 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text.Write    0x00001028       0x84 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .text.Chip_EEPROM_Init
+                0x000010ac       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+                0x000010ac                Chip_EEPROM_Init
+ .text.Chip_EEPROM_Write
+                0x00001104       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+                0x00001104                Chip_EEPROM_Write
+ .text.Chip_GPIO_Init
+                0x00001114        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+                0x00001114                Chip_GPIO_Init
+ .text.Chip_IOCON_Init
+                0x0000111e        0xc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+                0x0000111e                Chip_IOCON_Init
+ .text.Chip_IOCON_UngroundAnabus
+                0x0000112a        0xe D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+                0x0000112a                Chip_IOCON_UngroundAnabus
+ .text.Chip_IOCON_SetPinConfig
+                0x00001138       0x26 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+                0x00001138                Chip_IOCON_SetPinConfig
+ .text.Chip_NFC_GetStatus
+                0x0000115e        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x0000115e                Chip_NFC_GetStatus
+ .text.Chip_NFC_Int_SetEnabledMask
+                0x00001164        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x00001164                Chip_NFC_Int_SetEnabledMask
+ .text.Chip_NFC_Int_GetEnabledMask
+                0x0000116c        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x0000116c                Chip_NFC_Int_GetEnabledMask
+ .text.Chip_NFC_Int_GetRawStatus
+                0x00001174        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x00001174                Chip_NFC_Int_GetRawStatus
+ .text.Chip_NFC_Int_ClearRawStatus
+                0x0000117c       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x0000117c                Chip_NFC_Int_ClearRawStatus
+ .text.Chip_NFC_Init
+                0x0000119c       0x24 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x0000119c                Chip_NFC_Init
+ .text.Chip_NFC_SetTargetAddress
+                0x000011c0        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+                0x000011c0                Chip_NFC_SetTargetAddress
+ *fill*         0x000011c6        0x2 ff
+ .text.ModifyRegister
+                0x000011c8       0x40 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.PrepareLowPowerMode
+                0x00001208       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .text.Chip_PMU_PowerMode_EnterDeepPowerDown
+                0x00001238       0x1e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+                0x00001238                Chip_PMU_PowerMode_EnterDeepPowerDown
+ .text.Chip_RTC_Init
+                0x00001256        0xc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x00001256                Chip_RTC_Init
+ *fill*         0x00001262        0x2 ff
+ .text.Chip_RTC_Wakeup_SetControl
+                0x00001264       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x00001264                Chip_RTC_Wakeup_SetControl
+ .text.Chip_RTC_Wakeup_SetReload
+                0x00001280       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x00001280                Chip_RTC_Wakeup_SetReload
+ .text.Chip_RTC_Time_GetValue
+                0x0000129c       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x0000129c                Chip_RTC_Time_GetValue
+ .text.Chip_RTC_Int_SetEnabledMask
+                0x000012b4       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x000012b4                Chip_RTC_Int_SetEnabledMask
+ .text.Chip_RTC_Int_GetRawStatus
+                0x000012d4       0x1c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x000012d4                Chip_RTC_Int_GetRawStatus
+ .text.Chip_RTC_Int_ClearRawStatus
+                0x000012f0       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+                0x000012f0                Chip_RTC_Int_ClearRawStatus
+ .text.Chip_SysCon_Peripheral_AssertReset
+                0x00001310       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                0x00001310                Chip_SysCon_Peripheral_AssertReset
+ .text.Chip_SysCon_Peripheral_DeassertReset
+                0x00001324       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                0x00001324                Chip_SysCon_Peripheral_DeassertReset
+ .text.Chip_SysCon_Peripheral_EnablePower
+                0x00001338       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                0x00001338                Chip_SysCon_Peripheral_EnablePower
+ .text.Chip_SysCon_Peripheral_DisablePower
+                0x00001350       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                0x00001350                Chip_SysCon_Peripheral_DisablePower
+ .text.Chip_SysCon_StartLogic_SetEnabledMask
+                0x00001368       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                0x00001368                Chip_SysCon_StartLogic_SetEnabledMask
+ .text.Chip_SysCon_StartLogic_ClearStatus
+                0x0000137c       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+                0x0000137c                Chip_SysCon_StartLogic_ClearStatus
+ .text.Chip_TIMER_Init
+                0x00001394        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+                0x00001394                Chip_TIMER_Init
+ .text.Chip_TIMER_Reset
+                0x0000139e       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+                0x0000139e                Chip_TIMER_Reset
+ *fill*         0x000013b6        0x2 ff
+ .text.Chip_TSen_Init
+                0x000013b8       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x000013b8                Chip_TSen_Init
+ .text.Chip_TSen_DeInit
+                0x000013e8       0x16 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x000013e8                Chip_TSen_DeInit
+ .text.Chip_TSen_SetResolution
+                0x000013fe       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x000013fe                Chip_TSen_SetResolution
+ .text.Chip_TSen_GetResolution
+                0x0000140e        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x0000140e                Chip_TSen_GetResolution
+ .text.Chip_TSen_Start
+                0x00001416        0xa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x00001416                Chip_TSen_Start
+ .text.Chip_TSen_ReadStatus
+                0x00001420       0x34 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x00001420                Chip_TSen_ReadStatus
+ .text.Chip_TSen_GetValue
+                0x00001454        0x6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x00001454                Chip_TSen_GetValue
+ *fill*         0x0000145a        0x2 ff
+ .text.Chip_TSen_NativeToCelsius
+                0x0000145c       0x28 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x0000145c                Chip_TSen_NativeToCelsius
+ .text.Chip_TSen_Int_SetEnabledMask
+                0x00001484        0x8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+                0x00001484                Chip_TSen_Int_SetEnabledMask
+ .text.Chip_WWDT_Feed
+                0x0000148c       0x14 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+                0x0000148c                Chip_WWDT_Feed
+ .text.Chip_WWDT_Start
+                0x000014a0       0x38 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+                0x000014a0                Chip_WWDT_Start
+ .text.defaultIntHandler
+                0x000014d8       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+                0x000014d8                I2C0_IRQHandler
+                0x000014d8                PMUBOD_IRQHandler
+                0x000014d8                HardFault_Handler
+                0x000014d8                SysTick_Handler
+                0x000014d8                PendSV_Handler
+                0x000014d8                NMI_Handler
+                0x000014d8                PIO0_8_IRQHandler
+                0x000014d8                PIO0_4_IRQHandler
+                0x000014d8                SSP0_IRQHandler
+                0x000014d8                PMUFLD_IRQHandler
+                0x000014d8                PIO0_6_IRQHandler
+                0x000014d8                PIO0_5_IRQHandler
+                0x000014d8                PIO0_1_IRQHandler
+                0x000014d8                PIO0_IRQHandler
+                0x000014d8                ADC_IRQHandler
+                0x000014d8                PIO0_3_IRQHandler
+                0x000014d8                WDT_IRQHandler
+                0x000014d8                SVC_Handler
+                0x000014d8                PIO0_10_IRQHandler
+                0x000014d8                PIO0_7_IRQHandler
+                0x000014d8                CT32B0_IRQHandler
+                0x000014d8                PIO0_2_IRQHandler
+                0x000014d8                EEPROM_IRQHandler
+                0x000014d8                RTCPWREQ_IRQHandler
+                0x000014d8                RFFIELD_IRQHandler
+                0x000014d8                C2D_IRQHandler
+                0x000014d8                FLASH_IRQHandler
+                0x000014d8                I2D_IRQHandler
+                0x000014d8                PIO0_9_IRQHandler
+ .text.Chip_BusSync_WaitSync
+                0x000014f0       0x12 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .text.Chip_BusSync_WriteReg
+                0x00001502       0x1e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+                0x00001502                Chip_BusSync_WriteReg
+ .text.Chip_BusSync_ReadReg
+                0x00001520       0x28 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+                0x00001520                Chip_BusSync_ReadReg
+ .text.memcpy   0x00001548        0x8 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+                0x00001548                memcpy
+ .text.memmove  0x00001550        0x8 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+                0x00001550                memmove
+ .text.memset   0x00001558        0x8 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+                0x00001558                memset
+ .text.__weak_main
+                0x00001560        0x8 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+                0x00001560                __weak_main
+                0x00001560                __main
+ .text.strlen   0x00001568       0x5c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+                0x00001568                strlen
+ .text.__aeabi_division_idivmod
+                0x000015c4       0x78 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+                0x000015c4                __aeabi_idivmod
+                0x000015c4                __aeabi_idiv
+                0x000015ca                __aeabi_uidivmod
+                0x000015ca                __aeabi_uidiv
+ .text.__aeabi_division_idiv0
+                0x0000163c        0x2 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+                0x0000163c                __aeabi_idiv0
+ .text.__aeabi_memcpy
+                0x0000163e       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+                0x0000163e                __aeabi_memcpy4
+                0x0000163e                __aeabi_memcpy8
+                0x0000163e                __aeabi_memcpy
+ .text.__aeabi_memmove
+                0x0000166a       0x1c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+                0x0000166a                __aeabi_memmove
+                0x0000166a                __aeabi_memmove4
+                0x0000166a                __aeabi_memmove8
+ .text.__aeabi_memset_lowlevel
+                0x00001686       0x2a D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+                0x00001686                __aeabi_lowlevel_memset
+ *(.rodata .rodata.* .constdata .constdata.*)
+ .rodata.PublishTemperature.str1.1
+                0x000016b0        0xb ./src/maintlogger.o
+ *fill*         0x000016bb        0x1 ff
+ .rodata.sDefaultBytes
+                0x000016bc        0xc ./mods/ndeft2t/ndeft2t.o
+                0x000016c8                        . = ALIGN (0x4)
+
+.crp            0x000016c8        0x4
+ .crp           0x000016c8        0x4 ./src/crp.o
+                0x000016c8                CRP_WORD
+
+.glue_7         0x000016cc        0x0
+ .glue_7        0x000016cc        0x0 linker stubs
+
+.glue_7t        0x000016cc        0x0
+ .glue_7t       0x000016cc        0x0 linker stubs
+
+.vfp11_veneer   0x000016cc        0x0
+ .vfp11_veneer  0x000016cc        0x0 linker stubs
+
+.v4_bx          0x000016cc        0x0
+ .v4_bx         0x000016cc        0x0 linker stubs
+
+.iplt           0x000016cc        0x0
+ .iplt          0x000016cc        0x0 ./src/maintlogger.o
+
+.rel.dyn        0x000016cc        0x0
+ .rel.iplt      0x000016cc        0x0 ./src/maintlogger.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx      0x000016cc        0x0
+                0x000016cc                        __exidx_start = .
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000016cc                        __exidx_end = .
+                0x000016cc                        _etext = .
+
+.uninit_RESERVED
+                0x10000000        0x0
+                0x10000000                        _start_uninit_RESERVED = .
+ *(.bss.$RESERVED*)
+                0x10000000                        . = ALIGN (0x4)
+                0x10000000                        _end_uninit_RESERVED = .
+
+.data           0x10000000        0x4 load address 0x000016cc
+ FILL mask 0xff
+                0x10000000                        _data = .
+                [!provide]                        PROVIDE (__start_data_RAM = .)
+                [!provide]                        PROVIDE (__start_data_SRAM8 = .)
+ *(vtable)
+ *(.ramfunc*)
+ *(CodeQuickAccess)
+ *(DataQuickAccess)
+ *(RamFunction)
+ *(.data*)
+ .data.sLastMeasurement
+                0x10000000        0x4 ./src/temperature.o
+                0x10000004                        . = ALIGN (0x4)
+                0x10000004                        _edata = .
+                [!provide]                        PROVIDE (__end_data_RAM = .)
+                [!provide]                        PROVIDE (__end_data_SRAM8 = .)
+
+.igot.plt       0x10000004        0x0 load address 0x000016d0
+ .igot.plt      0x10000004        0x0 ./src/maintlogger.o
+
+.bss            0x10000004       0x44
+                0x10000004                        _bss = .
+                [!provide]                        PROVIDE (__start_bss_RAM = .)
+                [!provide]                        PROVIDE (__start_bss_SRAM8 = .)
+ *(.bss*)
+ .bss.sMessageRead
+                0x10000004        0x1 ./src/maintlogger.o
+ .bss.sMessageAvailable
+                0x10000005        0x1 ./src/maintlogger.o
+ .bss.sHostTimeoutInterruptFired
+                0x10000006        0x1 ./src/timer.o
+ .bss.sMeasurementTimeoutInterruptFired
+                0x10000007        0x1 ./src/timer.o
+ .bss.sContext  0x10000008        0x4 ./mods/tmeas/tmeas.o
+ .bss.sFormat   0x1000000c        0x1 ./mods/tmeas/tmeas.o
+ .bss.sMeasurementInProgress
+                0x1000000d        0x1 ./mods/tmeas/tmeas.o
+ .bss.sIsOn.0   0x1000000e        0x1 ./mods/ndeft2t/ndeft2t.o
+ *fill*         0x1000000f        0x1 
+ .bss.sLastPageOfPayload
+                0x10000010        0x4 ./mods/ndeft2t/ndeft2t.o
+ .bss.sAutomaticMode
+                0x10000014        0x1 ./mods/ndeft2t/ndeft2t.o
+ *fill*         0x10000015        0x3 
+ .bss.sTermTlvPage
+                0x10000018        0x4 ./mods/ndeft2t/ndeft2t.o
+ .bss.sTermTlvOffset
+                0x1000001c        0x4 ./mods/ndeft2t/ndeft2t.o
+ .bss.spNextResponse
+                0x10000020        0x4 ./mods/msg/msg.o
+ .bss.spOldestResponse
+                0x10000024        0x4 ./mods/msg/msg.o
+ .bss.spResponseBuffer
+                0x10000028        0x4 ./mods/msg/msg.o
+ .bss.sResponseCb
+                0x1000002c        0x4 ./mods/msg/msg.o
+ .bss.sMeta     0x10000030        0xc ./mods/event/event.o
+ .bss.stickyMEM_WRITE
+                0x1000003c        0x4 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .bss.Chip_PMU_AccessCounter
+                0x10000040        0x4 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .bss.Chip_RTC_AccessCounter
+                0x10000044        0x4 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ *(COMMON)
+                0x10000048                        . = ALIGN (0x4)
+                0x10000048                        _ebss = .
+                [!provide]                        PROVIDE (__end_bss_RAM = .)
+                [!provide]                        PROVIDE (__end_bss_SRAM8 = .)
+                [!provide]                        PROVIDE (end = .)
+
+.noinit         0x10000048      0x280
+                0x10000048                        _noinit = .
+                [!provide]                        PROVIDE (__start_noinit_RAM = .)
+                [!provide]                        PROVIDE (__start_noinit_SRAM8 = .)
+ *(.noinit*)
+ .noinit        0x10000048      0x218 ./src/maintlogger.o
+ .noinit        0x10000260       0x21 ./src/memory.o
+ *fill*         0x10000281        0x3 
+ .noinit        0x10000284       0x44 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+                0x100002c8                        . = ALIGN (0x4)
+                0x100002c8                        _end_noinit = .
+                [!provide]                        PROVIDE (__end_noinit_RAM = .)
+                [!provide]                        PROVIDE (__end_noinit_SRAM8 = .)
+                [!provide]                        PROVIDE (_pvHeapStart = DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10001ff0                        PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_SRAM8 - 0x0))
+                0x00000000                        _image_start = LOADADDR (.text)
+                0x000016d0                        _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x000016d0                        _image_size = (_image_end - _image_start)
+OUTPUT(app_demo_dp_tlogger.axf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0xe41a
+ .debug_info    0x00000000       0x7b ./src/crp.o
+ .debug_info    0x0000007b      0xef0 ./src/maintlogger.o
+ .debug_info    0x00000f6b      0xeb2 ./src/memory.o
+ .debug_info    0x00001e1d      0x522 ./src/temperature.o
+ .debug_info    0x0000233f      0xe11 ./src/timer.o
+ .debug_info    0x00003150      0x8bf ./src/validate.o
+ .debug_info    0x00003a0f      0x909 ./mods/tmeas/tmeas.o
+ .debug_info    0x00004318     0x1762 ./mods/ndeft2t/ndeft2t.o
+ .debug_info    0x00005a7a      0xe30 ./mods/msg/msg.o
+ .debug_info    0x000068aa      0xebe ./mods/event/event.o
+ .debug_info    0x00007768      0x8b9 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_info    0x00008021      0x69b D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_info    0x000086bc      0x927 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_info    0x00008fe3      0x9ba D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_info    0x0000999d      0x852 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_info    0x0000a1ef      0x54c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_info    0x0000a73b      0x67d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_info    0x0000adb8      0xbc5 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_info    0x0000b97d      0x949 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_info    0x0000c2c6      0x691 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_info    0x0000c957      0x495 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_info    0x0000cdec      0x8f9 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_info    0x0000d6e5      0x27e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_info    0x0000d963      0x442 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_info    0x0000dda5      0x1fc D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_info    0x0000dfa1      0x12b D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_info    0x0000e0cc      0x12b D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_info    0x0000e1f7       0xfc D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_info    0x0000e2f3       0x4a D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_info    0x0000e33d       0xdd D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.debug_abbrev   0x00000000     0x3b15
+ .debug_abbrev  0x00000000       0x40 ./src/crp.o
+ .debug_abbrev  0x00000040      0x382 ./src/maintlogger.o
+ .debug_abbrev  0x000003c2      0x33a ./src/memory.o
+ .debug_abbrev  0x000006fc      0x201 ./src/temperature.o
+ .debug_abbrev  0x000008fd      0x305 ./src/timer.o
+ .debug_abbrev  0x00000c02      0x2bd ./src/validate.o
+ .debug_abbrev  0x00000ebf      0x2cd ./mods/tmeas/tmeas.o
+ .debug_abbrev  0x0000118c      0x485 ./mods/ndeft2t/ndeft2t.o
+ .debug_abbrev  0x00001611      0x326 ./mods/msg/msg.o
+ .debug_abbrev  0x00001937      0x319 ./mods/event/event.o
+ .debug_abbrev  0x00001c50      0x18b D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_abbrev  0x00001ddb      0x274 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_abbrev  0x0000204f      0x254 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_abbrev  0x000022a3      0x2cb D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_abbrev  0x0000256e      0x224 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_abbrev  0x00002792      0x16d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_abbrev  0x000028ff      0x1f8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_abbrev  0x00002af7      0x1f7 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_abbrev  0x00002cee      0x195 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_abbrev  0x00002e83      0x165 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_abbrev  0x00002fe8      0x1d1 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_abbrev  0x000031b9      0x1f5 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_abbrev  0x000033ae      0x156 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_abbrev  0x00003504      0x216 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_abbrev  0x0000371a       0xff D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_abbrev  0x00003819       0xb3 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_abbrev  0x000038cc       0xb3 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_abbrev  0x0000397f       0xa5 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_abbrev  0x00003a24       0x4c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_abbrev  0x00003a70       0xa5 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.debug_aranges  0x00000000      0xa80
+ .debug_aranges
+                0x00000000       0x18 ./src/crp.o
+ .debug_aranges
+                0x00000018       0x60 ./src/maintlogger.o
+ .debug_aranges
+                0x00000078       0x78 ./src/memory.o
+ .debug_aranges
+                0x000000f0       0x38 ./src/temperature.o
+ .debug_aranges
+                0x00000128       0x78 ./src/timer.o
+ .debug_aranges
+                0x000001a0       0x40 ./src/validate.o
+ .debug_aranges
+                0x000001e0       0x28 ./mods/tmeas/tmeas.o
+ .debug_aranges
+                0x00000208       0xc0 ./mods/ndeft2t/ndeft2t.o
+ .debug_aranges
+                0x000002c8       0x70 ./mods/msg/msg.o
+ .debug_aranges
+                0x00000338       0x68 ./mods/event/event.o
+ .debug_aranges
+                0x000003a0       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_aranges
+                0x000003c0       0x48 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_aranges
+                0x00000408       0xd0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_aranges
+                0x000004d8       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_aranges
+                0x00000530       0x40 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_aranges
+                0x00000570       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_aranges
+                0x000005c8       0x78 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_aranges
+                0x00000640       0xd8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_aranges
+                0x00000718       0x98 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_aranges
+                0x000007b0       0xa0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_aranges
+                0x00000850       0x48 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_aranges
+                0x00000898       0xc0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_aranges
+                0x00000958       0x28 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_aranges
+                0x00000980       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_aranges
+                0x000009b0       0x30 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_aranges
+                0x000009e0       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_aranges
+                0x00000a00       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_aranges
+                0x00000a20       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_aranges
+                0x00000a40       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_aranges
+                0x00000a60       0x20 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.debug_line     0x00000000     0x7999
+ .debug_line    0x00000000       0x2d ./src/crp.o
+ .debug_line    0x0000002d      0x776 ./src/maintlogger.o
+ .debug_line    0x000007a3      0x6e9 ./src/memory.o
+ .debug_line    0x00000e8c      0x3a1 ./src/temperature.o
+ .debug_line    0x0000122d      0x5d7 ./src/timer.o
+ .debug_line    0x00001804      0x3aa ./src/validate.o
+ .debug_line    0x00001bae      0x386 ./mods/tmeas/tmeas.o
+ .debug_line    0x00001f34      0xf14 ./mods/ndeft2t/ndeft2t.o
+ .debug_line    0x00002e48      0x79d ./mods/msg/msg.o
+ .debug_line    0x000035e5      0x742 ./mods/event/event.o
+ .debug_line    0x00003d27      0x22e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_line    0x00003f55      0x33d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_line    0x00004292      0x636 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_line    0x000048c8      0x51a D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_line    0x00004de2      0x31e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_line    0x00005100      0x273 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_line    0x00005373      0x47d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_line    0x000057f0      0x5f2 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_line    0x00005de2      0x3d6 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_line    0x000061b8      0x441 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_line    0x000065f9      0x298 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_line    0x00006891      0x5e0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_line    0x00006e71      0x1df D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_line    0x00007050      0x335 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_line    0x00007385      0x184 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_line    0x00007509      0x112 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_line    0x0000761b      0x113 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_line    0x0000772e       0xba D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_line    0x000077e8       0x56 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_line    0x0000783e      0x15b D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.debug_str      0x00000000     0x524f
+ .debug_str     0x00000000     0x524f ./src/crp.o
+                                0x1d6 (size before relaxing)
+ .debug_str     0x0000524f      0xc9b ./src/maintlogger.o
+ .debug_str     0x0000524f      0xdef ./src/memory.o
+ .debug_str     0x0000524f      0x68d ./src/temperature.o
+ .debug_str     0x0000524f      0xb95 ./src/timer.o
+ .debug_str     0x0000524f      0xb05 ./src/validate.o
+ .debug_str     0x0000524f      0x837 ./mods/tmeas/tmeas.o
+ .debug_str     0x0000524f      0xdc4 ./mods/ndeft2t/ndeft2t.o
+ .debug_str     0x0000524f      0xab4 ./mods/msg/msg.o
+ .debug_str     0x0000524f      0x5d5 ./mods/event/event.o
+ .debug_str     0x0000524f      0x560 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_str     0x0000524f      0x4d0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_str     0x0000524f      0x8b4 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_str     0x0000524f      0x80f D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_str     0x0000524f      0x5de D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_str     0x0000524f      0x7fa D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_str     0x0000524f      0x4ca D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_str     0x0000524f      0x720 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_str     0x0000524f      0x671 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_str     0x0000524f      0x948 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_str     0x0000524f      0x56e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_str     0x0000524f      0x916 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_str     0x0000524f      0x462 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_str     0x0000524f      0x36d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_str     0x0000524f      0x24b D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_str     0x0000524f      0x1b8 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_str     0x0000524f      0x1bb D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_str     0x0000524f      0x181 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_str     0x0000524f      0x127 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_str     0x0000524f      0x17b D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.comment        0x00000000       0x44
+ .comment       0x00000000       0x44 ./src/crp.o
+                                 0x45 (size before relaxing)
+ .comment       0x00000044       0x45 ./src/maintlogger.o
+ .comment       0x00000044       0x45 ./src/memory.o
+ .comment       0x00000044       0x45 ./src/temperature.o
+ .comment       0x00000044       0x45 ./src/timer.o
+ .comment       0x00000044       0x45 ./src/validate.o
+ .comment       0x00000044       0x45 ./mods/tmeas/tmeas.o
+ .comment       0x00000044       0x45 ./mods/ndeft2t/ndeft2t.o
+ .comment       0x00000044       0x45 ./mods/msg/msg.o
+ .comment       0x00000044       0x45 ./mods/event/event.o
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .comment       0x00000044       0x45 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .comment       0x00000044       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .comment       0x00000044       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .comment       0x00000044       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .comment       0x00000044       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .comment       0x00000044       0x45 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x2c ./src/crp.o
+ .ARM.attributes
+                0x0000002c       0x2c ./src/maintlogger.o
+ .ARM.attributes
+                0x00000058       0x2c ./src/memory.o
+ .ARM.attributes
+                0x00000084       0x2c ./src/temperature.o
+ .ARM.attributes
+                0x000000b0       0x2c ./src/timer.o
+ .ARM.attributes
+                0x000000dc       0x2c ./src/validate.o
+ .ARM.attributes
+                0x00000108       0x2c ./mods/tmeas/tmeas.o
+ .ARM.attributes
+                0x00000134       0x2c ./mods/ndeft2t/ndeft2t.o
+ .ARM.attributes
+                0x00000160       0x2c ./mods/msg/msg.o
+ .ARM.attributes
+                0x0000018c       0x2c ./mods/event/event.o
+ .ARM.attributes
+                0x000001b8       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .ARM.attributes
+                0x000001e4       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .ARM.attributes
+                0x00000210       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .ARM.attributes
+                0x0000023c       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .ARM.attributes
+                0x00000268       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .ARM.attributes
+                0x00000294       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .ARM.attributes
+                0x000002c0       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .ARM.attributes
+                0x000002ec       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .ARM.attributes
+                0x00000318       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .ARM.attributes
+                0x00000344       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .ARM.attributes
+                0x00000370       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .ARM.attributes
+                0x0000039c       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .ARM.attributes
+                0x000003c8       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .ARM.attributes
+                0x000003f4       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .ARM.attributes
+                0x00000420       0x2c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .ARM.attributes
+                0x0000044c       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .ARM.attributes
+                0x00000478       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .ARM.attributes
+                0x000004a4       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .ARM.attributes
+                0x000004d0       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000004fc       0x2c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x00000528       0x1c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .ARM.attributes
+                0x00000544       0x1c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+ .ARM.attributes
+                0x00000560       0x1c D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+
+.debug_loc      0x00000000     0x6cb0
+ .debug_loc     0x00000000      0x336 ./src/maintlogger.o
+ .debug_loc     0x00000336      0x28a ./src/memory.o
+ .debug_loc     0x000005c0      0x17e ./src/temperature.o
+ .debug_loc     0x0000073e      0x35e ./src/timer.o
+ .debug_loc     0x00000a9c       0xf0 ./src/validate.o
+ .debug_loc     0x00000b8c      0x23b ./mods/tmeas/tmeas.o
+ .debug_loc     0x00000dc7     0x16ab ./mods/ndeft2t/ndeft2t.o
+ .debug_loc     0x00002472      0x94c ./mods/msg/msg.o
+ .debug_loc     0x00002dbe      0xa2c ./mods/event/event.o
+ .debug_loc     0x000037ea      0x295 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_loc     0x00003a7f      0x47f D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_loc     0x00003efe      0x686 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_loc     0x00004584      0x575 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_loc     0x00004af9      0x288 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_loc     0x00004d81      0x3d7 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_loc     0x00005158      0x46d D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_loc     0x000055c5      0x545 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_loc     0x00005b0a      0x1e0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_loc     0x00005cea      0x272 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_loc     0x00005f5c      0x60e D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_loc     0x0000656a       0x38 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_loc     0x000065a2      0x285 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_loc     0x00006827      0x1f2 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_loc     0x00006a19       0x81 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_loc     0x00006a9a       0x81 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_loc     0x00006b1b       0x81 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_loc     0x00006b9c      0x114 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.debug_ranges   0x00000000      0xd60
+ .debug_ranges  0x00000000       0xa8 ./src/maintlogger.o
+ .debug_ranges  0x000000a8       0x80 ./src/memory.o
+ .debug_ranges  0x00000128       0x28 ./src/temperature.o
+ .debug_ranges  0x00000150      0x1a8 ./src/timer.o
+ .debug_ranges  0x000002f8       0x78 ./src/validate.o
+ .debug_ranges  0x00000370       0x58 ./mods/tmeas/tmeas.o
+ .debug_ranges  0x000003c8      0x120 ./mods/ndeft2t/ndeft2t.o
+ .debug_ranges  0x000004e8       0xb0 ./mods/msg/msg.o
+ .debug_ranges  0x00000598       0x58 ./mods/event/event.o
+ .debug_ranges  0x000005f0       0x10 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_ranges  0x00000600       0x88 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_ranges  0x00000688       0xc0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_ranges  0x00000748       0x48 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_ranges  0x00000790       0xd8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_ranges  0x00000868       0x48 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_ranges  0x000008b0       0xb0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_ranges  0x00000960      0x108 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_ranges  0x00000a68       0x88 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_ranges  0x00000af0       0x90 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_ranges  0x00000b80       0x38 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_ranges  0x00000bb8       0xb0 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_ranges  0x00000c68       0x18 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_ranges  0x00000c80       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_ranges  0x00000cd8       0x20 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_ranges  0x00000cf8       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_ranges  0x00000d08       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_ranges  0x00000d18       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_ranges  0x00000d28       0x10 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_ranges  0x00000d38       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+
+.debug_frame    0x00000000     0x17d4
+ .debug_frame   0x00000000       0xf8 ./src/maintlogger.o
+ .debug_frame   0x000000f8      0x108 ./src/memory.o
+ .debug_frame   0x00000200       0x6c ./src/temperature.o
+ .debug_frame   0x0000026c      0x118 ./src/timer.o
+ .debug_frame   0x00000384       0x70 ./src/validate.o
+ .debug_frame   0x000003f4       0x50 ./mods/tmeas/tmeas.o
+ .debug_frame   0x00000444      0x240 ./mods/ndeft2t/ndeft2t.o
+ .debug_frame   0x00000684      0x14c ./mods/msg/msg.o
+ .debug_frame   0x000007d0      0x134 ./mods/event/event.o
+ .debug_frame   0x00000904       0x28 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_frame   0x0000092c       0x90 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_frame   0x000009bc      0x1d8 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_frame   0x00000b94       0xe4 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_frame   0x00000c78       0x7c D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_frame   0x00000cf4       0xac D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_frame   0x00000da0      0x118 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_frame   0x00000eb8      0x268 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_frame   0x00001120      0x198 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_frame   0x000012b8      0x130 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_frame   0x000013e8       0x90 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_frame   0x00001478      0x1a4 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_frame   0x0000161c       0x38 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(wwdt_nss.o)
+ .debug_frame   0x00001654       0x58 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_frame   0x000016ac       0x60 D:\OneDrive - HKUST (Guangzhou)\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_frame   0x0000170c       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_frame   0x00001734       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_frame   0x0000175c       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_frame   0x00001784       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_frame   0x000017ac       0x28 D:/MCUXpressoIDE_24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.win32_24.12.0.202407110909/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
