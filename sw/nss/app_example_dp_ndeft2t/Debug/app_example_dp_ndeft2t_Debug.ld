@@ -5,7 +5,7 @@
  * Generated linker script file for Generic-M0plus
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on 2025年6月20日 下午3:00:10
+ * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on 2025年10月20日 下午4:41:14
  */
 
 INCLUDE "app_example_dp_ndeft2t_Debug_library.ld"

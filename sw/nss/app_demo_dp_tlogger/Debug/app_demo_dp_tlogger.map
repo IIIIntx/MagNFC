@@ -196,7 +196,6 @@ Discarded input sections
  .bss           0x00000000        0x0 ./src/msghandler.o
  .text.AppMsgHandlerSendMeasureTemperatureResponse
                 0x00000000       0x28 ./src/msghandler.o
- .debug_macro   0x00000000      0xad2 ./src/msghandler.o
  .debug_macro   0x00000000       0x10 ./src/msghandler.o
  .debug_macro   0x00000000      0x12e ./src/msghandler.o
  .debug_macro   0x00000000      0x5b3 ./src/msghandler.o
@@ -466,6 +465,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./mods/tmeas/tmeas.o
  .data          0x00000000        0x0 ./mods/tmeas/tmeas.o
  .bss           0x00000000        0x0 ./mods/tmeas/tmeas.o
+ .debug_macro   0x00000000      0xad2 ./mods/tmeas/tmeas.o
  .debug_macro   0x00000000       0x10 ./mods/tmeas/tmeas.o
  .debug_macro   0x00000000      0x12e ./mods/tmeas/tmeas.o
  .debug_macro   0x00000000      0x5b3 ./mods/tmeas/tmeas.o
@@ -780,7 +780,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./mods/compress/compress.o
  .data          0x00000000        0x0 ./mods/compress/compress.o
  .bss           0x00000000        0x0 ./mods/compress/compress.o
- .debug_macro   0x00000000      0xad2 ./mods/compress/compress.o
  .debug_macro   0x00000000       0x10 ./mods/compress/compress.o
  .debug_macro   0x00000000      0x12e ./mods/compress/compress.o
  .debug_macro   0x00000000      0x5b3 ./mods/compress/compress.o
@@ -2292,7 +2291,7 @@ LOAD linker stubs
  .debug_aranges
                 0x00000ee0       0x20 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
 
-.debug_macro    0x00000000     0x4789
+.debug_macro    0x00000000     0x525b
  .debug_macro   0x00000000       0x61 ./src/crp.o
  .debug_macro   0x00000061      0xad2 ./src/crp.o
  .debug_macro   0x00000b33       0x10 ./src/crp.o
@@ -2328,16 +2327,16 @@ LOAD linker stubs
  .debug_macro   0x00001e16       0x34 ./src/maintlogger.o
  .debug_macro   0x00001e4a      0x259 ./src/memory.o
  .debug_macro   0x000020a3      0x28c ./src/msghandler.o
- .debug_macro   0x0000232f       0x3a ./src/msghandler.o
- .debug_macro   0x00002369       0x22 ./src/msghandler.o
- .debug_macro   0x0000238b      0x1f2 ./src/temperature.o
- .debug_macro   0x0000257d       0x16 ./src/temperature.o
- .debug_macro   0x00002593       0x22 ./src/temperature.o
- .debug_macro   0x000025b5      0x2bc ./src/text.o
- .debug_macro   0x00002871      0x18c ./src/timer.o
- .debug_macro   0x000029fd      0x22d ./src/validate.o
- .debug_macro   0x00002c2a      0x1af ./mods/tmeas/tmeas.o
- .debug_macro   0x00002dd9      0xad2 ./mods/tmeas/tmeas.o
+ .debug_macro   0x0000232f      0xad2 ./src/msghandler.o
+ .debug_macro   0x00002e01       0x3a ./src/msghandler.o
+ .debug_macro   0x00002e3b       0x22 ./src/msghandler.o
+ .debug_macro   0x00002e5d      0x1f2 ./src/temperature.o
+ .debug_macro   0x0000304f       0x16 ./src/temperature.o
+ .debug_macro   0x00003065       0x22 ./src/temperature.o
+ .debug_macro   0x00003087      0x2bc ./src/text.o
+ .debug_macro   0x00003343      0x18c ./src/timer.o
+ .debug_macro   0x000034cf      0x22d ./src/validate.o
+ .debug_macro   0x000036fc      0x1af ./mods/tmeas/tmeas.o
  .debug_macro   0x000038ab      0x279 ./mods/storage/storage.o
  .debug_macro   0x00003b24      0x232 ./mods/ndeft2t/ndeft2t.o
  .debug_macro   0x00003d56      0x1e7 ./mods/msg/msg.o
@@ -2351,8 +2350,9 @@ LOAD linker stubs
  .debug_macro   0x000042cf       0xd8 ./mods/compress/heatshrink/heatshrink_encoder.o
  .debug_macro   0x000043a7       0x16 ./mods/compress/heatshrink/heatshrink_encoder.o
  .debug_macro   0x000043bd      0x1f1 ./mods/compress/compress.o
- .debug_macro   0x000045ae       0x1c ./mods/compress/compress.o
- .debug_macro   0x000045ca      0x1bf ./mods/batimp/batimp.o
+ .debug_macro   0x000045ae      0xad2 ./mods/compress/compress.o
+ .debug_macro   0x00005080       0x1c ./mods/compress/compress.o
+ .debug_macro   0x0000509c      0x1bf ./mods/batimp/batimp.o
 
 .debug_line     0x00000000    0x10020
  .debug_line    0x00000000      0x305 ./src/crp.o
@@ -2395,47 +2395,47 @@ LOAD linker stubs
  .debug_line    0x0000fe43       0xba D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
  .debug_line    0x0000fefd      0x123 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
 
-.debug_str      0x00000000     0xff4e
- .debug_str     0x00000000     0xff4e ./src/crp.o
+.debug_str      0x00000000     0xff6d
+ .debug_str     0x00000000     0xff6d ./src/crp.o
                                0x4a2f (size before relaxing)
- .debug_str     0x0000ff4e     0x9352 ./src/maintlogger.o
- .debug_str     0x0000ff4e     0x8504 ./src/memory.o
- .debug_str     0x0000ff4e     0x9661 ./src/msghandler.o
- .debug_str     0x0000ff4e     0x75b2 ./src/temperature.o
- .debug_str     0x0000ff4e     0x80a8 ./src/text.o
- .debug_str     0x0000ff4e     0x74b8 ./src/timer.o
- .debug_str     0x0000ff4e     0x810e ./src/validate.o
- .debug_str     0x0000ff4e     0x71bf ./mods/tmeas/tmeas.o
- .debug_str     0x0000ff4e     0x8409 ./mods/storage/storage.o
- .debug_str     0x0000ff4e     0x7c82 ./mods/ndeft2t/ndeft2t.o
- .debug_str     0x0000ff4e     0x79e2 ./mods/msg/msg.o
- .debug_str     0x0000ff4e     0x740d ./mods/event/event.o
- .debug_str     0x0000ff4e     0x52ff ./mods/compress/heatshrink/heatshrink_decoder.o
- .debug_str     0x0000ff4e     0x542d ./mods/compress/heatshrink/heatshrink_encoder.o
- .debug_str     0x0000ff4e     0x763a ./mods/compress/compress.o
- .debug_str     0x0000ff4e     0x6f99 ./mods/batimp/batimp.o
- .debug_str     0x0000ff4e      0x543 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
- .debug_str     0x0000ff4e      0x496 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
- .debug_str     0x0000ff4e      0x897 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
- .debug_str     0x0000ff4e      0x7f2 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
- .debug_str     0x0000ff4e      0x5c1 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
- .debug_str     0x0000ff4e      0x809 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
- .debug_str     0x0000ff4e      0x7dd D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
- .debug_str     0x0000ff4e      0x4ad D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
- .debug_str     0x0000ff4e      0x703 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
- .debug_str     0x0000ff4e      0x654 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
- .debug_str     0x0000ff4e      0x92b D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
- .debug_str     0x0000ff4e      0x551 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
- .debug_str     0x0000ff4e      0x8f9 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
- .debug_str     0x0000ff4e      0x333 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
- .debug_str     0x0000ff4e      0x22e D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
- .debug_str     0x0000ff4e      0x1b8 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
- .debug_str     0x0000ff4e      0x1bb D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
- .debug_str     0x0000ff4e      0x181 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
- .debug_str     0x0000ff4e      0x127 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
- .debug_str     0x0000ff4e      0x160 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
- .debug_str     0x0000ff4e      0x15d D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
- .debug_str     0x0000ff4e      0x17b D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+ .debug_str     0x0000ff6d     0x9352 ./src/maintlogger.o
+ .debug_str     0x0000ff6d     0x8504 ./src/memory.o
+ .debug_str     0x0000ff6d     0x9661 ./src/msghandler.o
+ .debug_str     0x0000ff6d     0x75b2 ./src/temperature.o
+ .debug_str     0x0000ff6d     0x80a8 ./src/text.o
+ .debug_str     0x0000ff6d     0x74b8 ./src/timer.o
+ .debug_str     0x0000ff6d     0x810e ./src/validate.o
+ .debug_str     0x0000ff6d     0x71bf ./mods/tmeas/tmeas.o
+ .debug_str     0x0000ff6d     0x8409 ./mods/storage/storage.o
+ .debug_str     0x0000ff6d     0x7c82 ./mods/ndeft2t/ndeft2t.o
+ .debug_str     0x0000ff6d     0x79e2 ./mods/msg/msg.o
+ .debug_str     0x0000ff6d     0x740d ./mods/event/event.o
+ .debug_str     0x0000ff6d     0x52ff ./mods/compress/heatshrink/heatshrink_decoder.o
+ .debug_str     0x0000ff6d     0x542d ./mods/compress/heatshrink/heatshrink_encoder.o
+ .debug_str     0x0000ff6d     0x763a ./mods/compress/compress.o
+ .debug_str     0x0000ff6d     0x6f99 ./mods/batimp/batimp.o
+ .debug_str     0x0000ff6d      0x543 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(board.o)
+ .debug_str     0x0000ff6d      0x496 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_board_dp\Release\liblib_board_dp.a(led.o)
+ .debug_str     0x0000ff6d      0x897 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(clock_nss.o)
+ .debug_str     0x0000ff6d      0x7f2 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(eeprom_nss.o)
+ .debug_str     0x0000ff6d      0x5c1 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(gpio_nss.o)
+ .debug_str     0x0000ff6d      0x809 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iap_nss.o)
+ .debug_str     0x0000ff6d      0x7dd D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(iocon_nss.o)
+ .debug_str     0x0000ff6d      0x4ad D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(nfc_nss.o)
+ .debug_str     0x0000ff6d      0x703 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(pmu_nss.o)
+ .debug_str     0x0000ff6d      0x654 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(rtc_nss.o)
+ .debug_str     0x0000ff6d      0x92b D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(syscon_nss.o)
+ .debug_str     0x0000ff6d      0x551 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(timer_nss.o)
+ .debug_str     0x0000ff6d      0x8f9 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(tsen_nss.o)
+ .debug_str     0x0000ff6d      0x333 D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(startup.o)
+ .debug_str     0x0000ff6d      0x22e D:\SchoolTasks\SCuMRobot\magNFC\release_mra2_12_6_nhs3152\sw\nss\lib_chip_nss\Release\liblib_chip_nss.a(bussync_nss.o)
+ .debug_str     0x0000ff6d      0x1b8 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcpy.o)
+ .debug_str     0x0000ff6d      0x1bb D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memmove.o)
+ .debug_str     0x0000ff6d      0x181 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+ .debug_str     0x0000ff6d      0x127 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(__weak__main.o)
+ .debug_str     0x0000ff6d      0x160 D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memcmp.o)
+ .debug_str     0x0000ff6d      0x15d D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strcpy.o)
+ .debug_str     0x0000ff6d      0x17b D:/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
 
 .comment        0x00000000       0x44
  .comment       0x00000000       0x44 ./src/crp.o

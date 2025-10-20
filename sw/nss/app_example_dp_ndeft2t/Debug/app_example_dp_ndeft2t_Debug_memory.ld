@@ -5,7 +5,7 @@
  * Generated linker script file for Generic-M0plus
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on 2025年6月20日 下午3:00:10
+ * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on 2025年10月20日 下午4:41:14
  */
 
 MEMORY
